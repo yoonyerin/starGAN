@@ -1,0 +1,78 @@
+Finished preprocessing the CelebA dataset...
+200600
+torch.cuda.is_available(): True
+torch.cuda.get_device_name(): NVIDIA RTX A6000
+  0%|                                                                                                                                                                                                                                                | 0/200000 [00:00<?, ?it/s]/home/yerinyoon/anaconda3/envs/stargan/lib/python3.9/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+  0%|                                                                                                                                                                                                                                     | 1/200000 [00:01<71:57:01,  1.30s/it]
+Finished preprocessing the CelebA dataset...
+200600
+
+
+
+
+
+
+  0%|                                                                                                                                                                                                                                   | 10/200000 [00:16<110:39:23,  1.99s/it]
+
+
+
+
+
+
+  0%|                                                                                                                                                                                                                                    | 20/200000 [00:31<99:11:37,  1.79s/it]
+
+
+
+
+
+
+  0%|                                                                                                                                                                                                                                    | 31/200000 [00:47<89:24:58,  1.61s/it]
+
+
+
+
+
+
+
+  0%|                                                                                                                                                                                                                                   | 40/200000 [01:01<105:16:49,  1.90s/it]
+
+
+
+
+
+
+  0%|                                                                                                                                                                                                                                   | 50/200000 [01:17<106:51:39,  1.92s/it]
+
+
+
+
+
+
+
+
+  0%|                                                                                                                                                                                                                                   | 60/200000 [01:33<104:38:06,  1.88s/it]
+
+  0%|                                                                                                                                                                                                                                    | 64/200000 [01:38<85:08:30,  1.53s/it]
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 165, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 87, in main
+    solver.train(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 445, in train
+    x_fake = self.G(x_real, c_trg)
+  File "/home/yerinyoon/anaconda3/envs/stargan/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 84, in forward
+    return self.main(x)
+  File "/home/yerinyoon/anaconda3/envs/stargan/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yerinyoon/anaconda3/envs/stargan/lib/python3.9/site-packages/torch/nn/modules/container.py", line 204, in forward
+    input = module(input)
+  File "/home/yerinyoon/anaconda3/envs/stargan/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yerinyoon/anaconda3/envs/stargan/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 463, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/yerinyoon/anaconda3/envs/stargan/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 459, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+KeyboardInterrupt

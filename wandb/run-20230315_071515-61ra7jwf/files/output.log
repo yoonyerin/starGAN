@@ -1,0 +1,337 @@
+Finished preprocessing the CelebA dataset...
+200600
+torch.cuda.is_available(): True
+torch.cuda.get_device_name(): NVIDIA RTX A6000
+Finished preprocessing the CelebA dataset...
+200600
+Start training...
+  0%|                                                                                                                                                                            | 0/200000 [00:00<?, ?it/s]/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+  0%|                                                                                                                                                                 | 5/200000 [00:05<41:18:53,  1.34it/s]
+
+  0%|                                                                                                                                                                 | 24/200000 [00:07<6:18:42,  8.80it/s]
+
+  0%|                                                                                                                                                                 | 40/200000 [00:09<7:13:41,  7.68it/s]
+Elapsed [0:00:08], Iteration [30/200000], D/loss_real: -17.5912, D/loss_fake: 9.9925, D/loss_cls: 2.0122, D/loss_gp: 0.0757, G/loss_fake: -5.9330, G/loss_rec: 0.4088, G/loss_cls: 1.8249
+
+  0%|                                                                                                                                                                 | 58/200000 [00:11<6:04:24,  9.14it/s]
+Elapsed [0:00:10], Iteration [50/200000], D/loss_real: -7.7370, D/loss_fake: 0.7712, D/loss_cls: 2.6560, D/loss_gp: 0.1576, G/loss_fake: -7.4880, G/loss_rec: 0.4084, G/loss_cls: 2.7287
+
+  0%|                                                                                                                                                                 | 76/200000 [00:13<6:46:52,  8.19it/s]
+Elapsed [0:00:12], Iteration [70/200000], D/loss_real: -14.2506, D/loss_fake: 8.6627, D/loss_cls: 2.2962, D/loss_gp: 0.0714, G/loss_fake: -1.9594, G/loss_rec: 0.3912, G/loss_cls: 2.0864
+
+  0%|                                                                                                                                                                 | 94/200000 [00:15<5:48:48,  9.55it/s]
+
+  0%|                                                                                                                                                                | 112/200000 [00:17<5:43:09,  9.71it/s]
+Elapsed [0:00:16], Iteration [100/200000], D/loss_real: -17.7276, D/loss_fake: 18.2958, D/loss_cls: 3.0664, D/loss_gp: 0.0173, G/loss_fake: -7.1189, G/loss_rec: 0.3066, G/loss_cls: 2.2755
+
+  0%|                                                                                                                                                                | 132/200000 [00:19<6:03:17,  9.17it/s]
+Elapsed [0:00:18], Iteration [120/200000], D/loss_real: -5.8944, D/loss_fake: 2.9911, D/loss_cls: 2.3936, D/loss_gp: 0.0323, G/loss_fake: -2.0094, G/loss_rec: 0.3292, G/loss_cls: 2.5894
+
+  0%|                                                                                                                                                                | 148/200000 [00:21<6:06:19,  9.09it/s]
+Elapsed [0:00:20], Iteration [140/200000], D/loss_real: -7.8518, D/loss_fake: 3.7912, D/loss_cls: 2.9827, D/loss_gp: 0.0341, G/loss_fake: 0.8195, G/loss_rec: 0.3729, G/loss_cls: 2.5272
+
+  0%|▏                                                                                                                                                               | 166/200000 [00:23<6:19:02,  8.79it/s]
+Elapsed [0:00:22], Iteration [160/200000], D/loss_real: -6.6456, D/loss_fake: -1.5694, D/loss_cls: 2.7348, D/loss_gp: 0.0551, G/loss_fake: 3.8939, G/loss_rec: 0.3739, G/loss_cls: 2.5789
+
+  0%|▏                                                                                                                                                               | 186/200000 [00:25<6:39:58,  8.33it/s]
+Elapsed [0:00:25], Iteration [180/200000], D/loss_real: -14.2481, D/loss_fake: 9.3519, D/loss_cls: 1.8695, D/loss_gp: 0.0406, G/loss_fake: -12.6453, G/loss_rec: 0.3459, G/loss_cls: 1.9793
+
+  0%|▏                                                                                                                                                               | 204/200000 [00:27<5:45:49,  9.63it/s]
+
+  0%|▏                                                                                                                                                               | 224/200000 [00:29<5:11:00, 10.71it/s]
+Elapsed [0:00:28], Iteration [210/200000], D/loss_real: 1.6024, D/loss_fake: -12.0935, D/loss_cls: 2.7257, D/loss_gp: 0.2318, G/loss_fake: 0.7073, G/loss_rec: 0.3906, G/loss_cls: 2.2106
+
+  0%|▏                                                                                                                                                               | 242/200000 [00:31<6:07:55,  9.05it/s]
+Elapsed [0:00:30], Iteration [230/200000], D/loss_real: -12.6683, D/loss_fake: 2.9167, D/loss_cls: 1.9406, D/loss_gp: 0.0821, G/loss_fake: -3.9667, G/loss_rec: 0.3590, G/loss_cls: 2.1110
+
+  0%|▏                                                                                                                                                               | 260/200000 [00:33<6:24:14,  8.66it/s]
+Elapsed [0:00:32], Iteration [250/200000], D/loss_real: -8.6579, D/loss_fake: 2.4070, D/loss_cls: 2.3741, D/loss_gp: 0.0368, G/loss_fake: -5.7163, G/loss_rec: 0.3652, G/loss_cls: 2.2471
+
+  0%|▏                                                                                                                                                               | 280/200000 [00:35<6:12:50,  8.93it/s]
+Elapsed [0:00:34], Iteration [270/200000], D/loss_real: -14.1399, D/loss_fake: 4.1567, D/loss_cls: 2.3750, D/loss_gp: 0.1499, G/loss_fake: -10.3297, G/loss_rec: 0.3202, G/loss_cls: 2.6095
+
+  0%|▏                                                                                                                                                               | 298/200000 [00:37<5:57:46,  9.30it/s]
+Elapsed [0:00:36], Iteration [290/200000], D/loss_real: -21.1514, D/loss_fake: 9.9850, D/loss_cls: 2.2301, D/loss_gp: 0.4503, G/loss_fake: -3.6843, G/loss_rec: 0.3130, G/loss_cls: 1.9534
+
+  0%|▎                                                                                                                                                               | 316/200000 [00:39<6:39:57,  8.32it/s]
+Elapsed [0:00:39], Iteration [310/200000], D/loss_real: -8.3725, D/loss_fake: -3.6232, D/loss_cls: 3.3802, D/loss_gp: 0.1871, G/loss_fake: 2.6168, G/loss_rec: 0.3249, G/loss_cls: 3.3135
+
+  0%|▎                                                                                                                                                               | 334/200000 [00:41<5:42:59,  9.70it/s]
+
+  0%|▎                                                                                                                                                               | 352/200000 [00:43<6:11:55,  8.95it/s]
+Elapsed [0:00:42], Iteration [340/200000], D/loss_real: 0.5254, D/loss_fake: -9.1050, D/loss_cls: 2.4045, D/loss_gp: 0.1601, G/loss_fake: 10.1318, G/loss_rec: 0.3210, G/loss_cls: 1.8255
+
+  0%|▎                                                                                                                                                               | 368/200000 [00:45<6:06:46,  9.07it/s]
+Elapsed [0:00:44], Iteration [360/200000], D/loss_real: -1.3924, D/loss_fake: -6.7571, D/loss_cls: 2.0229, D/loss_gp: 0.0146, G/loss_fake: 6.6184, G/loss_rec: 0.3178, G/loss_cls: 1.7802
+
+  0%|▎                                                                                                                                                               | 388/200000 [00:47<6:09:26,  9.01it/s]
+Elapsed [0:00:47], Iteration [380/200000], D/loss_real: -0.3397, D/loss_fake: -8.7102, D/loss_cls: 3.3069, D/loss_gp: 0.1150, G/loss_fake: -0.3849, G/loss_rec: 0.3121, G/loss_cls: 2.6696
+
+  0%|▎                                                                                                                                                               | 404/200000 [00:49<5:55:49,  9.35it/s]
+
+  0%|▎                                                                                                                                                               | 422/200000 [00:51<6:12:51,  8.92it/s]
+Elapsed [0:00:50], Iteration [410/200000], D/loss_real: -11.2838, D/loss_fake: 1.4458, D/loss_cls: 2.1431, D/loss_gp: 0.1406, G/loss_fake: -1.0599, G/loss_rec: 0.2759, G/loss_cls: 1.7948
+
+  0%|▎                                                                                                                                                               | 438/200000 [00:53<6:10:51,  8.97it/s]
+Elapsed [0:00:52], Iteration [430/200000], D/loss_real: -8.9142, D/loss_fake: -0.3247, D/loss_cls: 2.4678, D/loss_gp: 0.1694, G/loss_fake: 2.7115, G/loss_rec: 0.2806, G/loss_cls: 2.7301
+
+  0%|▎                                                                                                                                                               | 458/200000 [00:56<6:11:19,  8.96it/s]
+Elapsed [0:00:55], Iteration [450/200000], D/loss_real: -4.9274, D/loss_fake: -5.4416, D/loss_cls: 3.1779, D/loss_gp: 0.1153, G/loss_fake: 11.4384, G/loss_rec: 0.3395, G/loss_cls: 2.8685
+
+  0%|▍                                                                                                                                                               | 474/200000 [00:57<5:47:42,  9.56it/s]
+
+  0%|▍                                                                                                                                                               | 492/200000 [00:59<6:16:05,  8.84it/s]
+Elapsed [0:00:58], Iteration [480/200000], D/loss_real: -24.7366, D/loss_fake: 16.5238, D/loss_cls: 2.2775, D/loss_gp: 0.1615, G/loss_fake: -10.0599, G/loss_rec: 0.2909, G/loss_cls: 2.4124
+
+  0%|▍                                                                                                                                                               | 510/200000 [01:02<6:55:54,  7.99it/s]
+Elapsed [0:01:00], Iteration [500/200000], D/loss_real: -26.3686, D/loss_fake: 9.4528, D/loss_cls: 2.3842, D/loss_gp: 0.5162, G/loss_fake: -9.3350, G/loss_rec: 0.3271, G/loss_cls: 3.0550
+
+  0%|▍                                                                                                                                                               | 528/200000 [01:04<6:09:22,  9.00it/s]
+Elapsed [0:01:03], Iteration [520/200000], D/loss_real: -9.5449, D/loss_fake: 5.2432, D/loss_cls: 2.5102, D/loss_gp: 0.0269, G/loss_fake: -5.4636, G/loss_rec: 0.2581, G/loss_cls: 2.3502
+
+  0%|▍                                                                                                                                                               | 544/200000 [01:05<5:48:31,  9.54it/s]
+
+  0%|▍                                                                                                                                                               | 562/200000 [01:07<6:15:30,  8.85it/s]
+Elapsed [0:01:06], Iteration [550/200000], D/loss_real: -12.1928, D/loss_fake: 5.6531, D/loss_cls: 3.1908, D/loss_gp: 0.0892, G/loss_fake: -4.9373, G/loss_rec: 0.2428, G/loss_cls: 3.3592
+
+  0%|▍                                                                                                                                                               | 580/200000 [01:10<6:55:52,  7.99it/s]
+Elapsed [0:01:08], Iteration [570/200000], D/loss_real: -3.4154, D/loss_fake: -3.7162, D/loss_cls: 2.6611, D/loss_gp: 0.0679, G/loss_fake: 0.6333, G/loss_rec: 0.3115, G/loss_cls: 2.8137
+
+  0%|▍                                                                                                                                                               | 598/200000 [01:12<6:03:20,  9.15it/s]
+Elapsed [0:01:11], Iteration [590/200000], D/loss_real: -3.5924, D/loss_fake: -0.4641, D/loss_cls: 2.0701, D/loss_gp: 0.0046, G/loss_fake: 0.8532, G/loss_rec: 0.2720, G/loss_cls: 1.9994
+
+  0%|▍                                                                                                                                                               | 614/200000 [01:13<5:46:37,  9.59it/s]
+
+  0%|▌                                                                                                                                                               | 634/200000 [01:16<5:47:04,  9.57it/s]
+Elapsed [0:01:14], Iteration [620/200000], D/loss_real: 0.7366, D/loss_fake: -6.2344, D/loss_cls: 1.6088, D/loss_gp: 0.0455, G/loss_fake: 9.4105, G/loss_rec: 0.2839, G/loss_cls: 1.7259
+
+  0%|▌                                                                                                                                                               | 650/200000 [01:18<6:55:40,  7.99it/s]
+Elapsed [0:01:16], Iteration [640/200000], D/loss_real: -0.2933, D/loss_fake: -5.5086, D/loss_cls: 2.6279, D/loss_gp: 0.0398, G/loss_fake: 0.3656, G/loss_rec: 0.2663, G/loss_cls: 2.7943
+
+  0%|▌                                                                                                                                                               | 668/200000 [01:20<6:08:40,  9.01it/s]
+Elapsed [0:01:19], Iteration [660/200000], D/loss_real: -18.5398, D/loss_fake: 8.9917, D/loss_cls: 2.2743, D/loss_gp: 0.1930, G/loss_fake: -9.3916, G/loss_rec: 0.2987, G/loss_cls: 2.0608
+
+  0%|▌                                                                                                                                                               | 684/200000 [01:21<5:51:17,  9.46it/s]
+
+  0%|▌                                                                                                                                                               | 702/200000 [01:24<6:21:34,  8.71it/s]
+Elapsed [0:01:22], Iteration [690/200000], D/loss_real: -14.9279, D/loss_fake: 7.3017, D/loss_cls: 1.8592, D/loss_gp: 0.0867, G/loss_fake: -2.7232, G/loss_rec: 0.2849, G/loss_cls: 2.1563
+
+  0%|▌                                                                                                                                                               | 716/200000 [01:25<6:45:17,  8.20it/s]
+Elapsed [0:01:25], Iteration [710/200000], D/loss_real: -8.0428, D/loss_fake: 3.8314, D/loss_cls: 2.2429, D/loss_gp: 0.0566, G/loss_fake: -2.3471, G/loss_rec: 0.2630, G/loss_cls: 2.6249
+
+  0%|▌                                                                                                                                                               | 734/200000 [01:27<5:48:52,  9.52it/s]
+
+  0%|▌                                                                                                                                                               | 750/200000 [01:29<7:02:06,  7.87it/s]
+Elapsed [0:01:28], Iteration [740/200000], D/loss_real: 22.0162, D/loss_fake: -25.9426, D/loss_cls: 3.8414, D/loss_gp: 0.1017, G/loss_fake: 17.9064, G/loss_rec: 0.2437, G/loss_cls: 3.3510
+
+  0%|▌                                                                                                                                                               | 768/200000 [01:31<6:11:23,  8.94it/s]
+Elapsed [0:01:30], Iteration [760/200000], D/loss_real: -7.9510, D/loss_fake: 3.2597, D/loss_cls: 1.6965, D/loss_gp: 0.0324, G/loss_fake: -7.4047, G/loss_rec: 0.2448, G/loss_cls: 1.8417
+
+  0%|▋                                                                                                                                                               | 786/200000 [01:33<6:39:58,  8.30it/s]
+Elapsed [0:01:33], Iteration [780/200000], D/loss_real: -16.0898, D/loss_fake: 12.9033, D/loss_cls: 2.2422, D/loss_gp: 0.0029, G/loss_fake: -13.3743, G/loss_rec: 0.2615, G/loss_cls: 2.1082
+
+  0%|▋                                                                                                                                                               | 804/200000 [01:35<5:57:28,  9.29it/s]
+
+  0%|▋                                                                                                                                                               | 820/200000 [01:37<7:25:18,  7.45it/s]
+Elapsed [0:01:36], Iteration [810/200000], D/loss_real: -7.8412, D/loss_fake: 4.4065, D/loss_cls: 1.5667, D/loss_gp: 0.0596, G/loss_fake: -4.3604, G/loss_rec: 0.2528, G/loss_cls: 1.5296
+
+  0%|▋                                                                                                                                                               | 835/200000 [01:39<8:26:14,  6.56it/s]
+Elapsed [0:01:39], Iteration [830/200000], D/loss_real: -8.4213, D/loss_fake: 3.7698, D/loss_cls: 3.2397, D/loss_gp: 0.0583, G/loss_fake: -5.6520, G/loss_rec: 0.2567, G/loss_cls: 3.5744
+
+  0%|▋                                                                                                                                                               | 854/200000 [01:41<5:55:44,  9.33it/s]
+
+  0%|▋                                                                                                                                                               | 871/200000 [01:43<6:44:53,  8.20it/s]
+Elapsed [0:01:42], Iteration [860/200000], D/loss_real: -5.5461, D/loss_fake: 3.0289, D/loss_cls: 1.3108, D/loss_gp: 0.0090, G/loss_fake: -2.1870, G/loss_rec: 0.2476, G/loss_cls: 1.2595
+
+  0%|▋                                                                                                                                                               | 889/200000 [01:45<5:45:46,  9.60it/s]
+Elapsed [0:01:45], Iteration [880/200000], D/loss_real: -15.2361, D/loss_fake: 9.3847, D/loss_cls: 3.6730, D/loss_gp: 0.1062, G/loss_fake: -5.8414, G/loss_rec: 0.2627, G/loss_cls: 3.2170
+
+  0%|▋                                                                                                                                                               | 907/200000 [01:47<6:04:32,  9.10it/s]
+Elapsed [0:01:47], Iteration [900/200000], D/loss_real: -19.1943, D/loss_fake: 13.8712, D/loss_cls: 2.5893, D/loss_gp: 0.1368, G/loss_fake: -11.0172, G/loss_rec: 0.2691, G/loss_cls: 2.5686
+
+  0%|▋                                                                                                                                                               | 923/200000 [01:49<6:11:31,  8.93it/s]
+
+  0%|▊                                                                                                                                                               | 941/200000 [01:51<6:48:15,  8.13it/s]
+Elapsed [0:01:50], Iteration [930/200000], D/loss_real: -4.5274, D/loss_fake: 2.6650, D/loss_cls: 1.8103, D/loss_gp: 0.0060, G/loss_fake: -0.3378, G/loss_rec: 0.2313, G/loss_cls: 1.9179
+
+  0%|▊                                                                                                                                                               | 959/200000 [01:53<5:41:49,  9.70it/s]
+Elapsed [0:01:52], Iteration [950/200000], D/loss_real: -9.4248, D/loss_fake: 2.7277, D/loss_cls: 2.3063, D/loss_gp: 0.1352, G/loss_fake: 0.8683, G/loss_rec: 0.3525, G/loss_cls: 2.1591
+
+  0%|▊                                                                                                                                                               | 977/200000 [01:56<6:20:53,  8.71it/s]
+Elapsed [0:01:55], Iteration [970/200000], D/loss_real: -10.7109, D/loss_fake: 8.1447, D/loss_cls: 2.1745, D/loss_gp: 0.0582, G/loss_fake: -3.4022, G/loss_rec: 0.2466, G/loss_cls: 2.0348
+
+  0%|▊                                                                                                                                                               | 993/200000 [01:57<6:00:09,  9.21it/s]
+
+  1%|▊                                                                                                                                                              | 1011/200000 [01:59<6:48:01,  8.13it/s]
+Elapsed [0:01:58], Iteration [1000/200000], D/loss_real: 0.2295, D/loss_fake: -5.5540, D/loss_cls: 1.5025, D/loss_gp: 0.0361, G/loss_fake: 6.6717, G/loss_rec: 0.2631, G/loss_cls: 1.9062
+
+  1%|▊                                                                                                                                                              | 1029/200000 [02:01<5:34:44,  9.91it/s]
+Elapsed [0:02:01], Iteration [1020/200000], D/loss_real: -7.2530, D/loss_fake: 5.2291, D/loss_cls: 1.8727, D/loss_gp: 0.0082, G/loss_fake: -3.7632, G/loss_rec: 0.2653, G/loss_cls: 1.9612
+
+  1%|▊                                                                                                                                                              | 1049/200000 [02:04<5:40:11,  9.75it/s]
+Elapsed [0:02:03], Iteration [1040/200000], D/loss_real: 23.8516, D/loss_fake: -27.6205, D/loss_cls: 1.6029, D/loss_gp: 0.0436, G/loss_fake: 27.4179, G/loss_rec: 0.2524, G/loss_cls: 1.6396
+
+  1%|▊                                                                                                                                                              | 1065/200000 [02:06<6:33:38,  8.42it/s]
+Elapsed [0:02:05], Iteration [1060/200000], D/loss_real: -3.8418, D/loss_fake: 0.3838, D/loss_cls: 1.9405, D/loss_gp: 0.0230, G/loss_fake: -3.1066, G/loss_rec: 0.2521, G/loss_cls: 2.1815
+
+  1%|▊                                                                                                                                                              | 1083/200000 [02:07<5:58:51,  9.24it/s]
+
+  1%|▉                                                                                                                                                              | 1101/200000 [02:10<6:48:38,  8.11it/s]
+Elapsed [0:02:08], Iteration [1090/200000], D/loss_real: -15.1473, D/loss_fake: 11.5851, D/loss_cls: 2.1641, D/loss_gp: 0.0157, G/loss_fake: -11.7684, G/loss_rec: 0.2534, G/loss_cls: 1.7401
+
+  1%|▉                                                                                                                                                              | 1119/200000 [02:12<5:48:56,  9.50it/s]
+Elapsed [0:02:11], Iteration [1110/200000], D/loss_real: -15.1505, D/loss_fake: 11.4416, D/loss_cls: 2.3748, D/loss_gp: 0.0388, G/loss_fake: -10.9869, G/loss_rec: 0.2357, G/loss_cls: 2.2675
+
+  1%|▉                                                                                                                                                              | 1137/200000 [02:14<6:16:07,  8.81it/s]
+Elapsed [0:02:13], Iteration [1130/200000], D/loss_real: -7.9382, D/loss_fake: 5.1430, D/loss_cls: 2.6089, D/loss_gp: 0.0158, G/loss_fake: -6.4637, G/loss_rec: 0.2307, G/loss_cls: 2.7665
+
+  1%|▉                                                                                                                                                              | 1153/200000 [02:16<6:09:10,  8.98it/s]
+
+  1%|▉                                                                                                                                                              | 1171/200000 [02:18<6:42:43,  8.23it/s]
+Elapsed [0:02:16], Iteration [1160/200000], D/loss_real: -0.1711, D/loss_fake: -5.0612, D/loss_cls: 2.1853, D/loss_gp: 0.0268, G/loss_fake: 9.1120, G/loss_rec: 0.2864, G/loss_cls: 3.0456
+
+  1%|▉                                                                                                                                                              | 1189/200000 [02:20<5:48:42,  9.50it/s]
+Elapsed [0:02:19], Iteration [1180/200000], D/loss_real: -26.2088, D/loss_fake: 19.8230, D/loss_cls: 1.2865, D/loss_gp: 0.0672, G/loss_fake: -19.4043, G/loss_rec: 0.2567, G/loss_cls: 1.2313
+
+  1%|▉                                                                                                                                                              | 1207/200000 [02:22<6:17:20,  8.78it/s]
+
+  1%|▉                                                                                                                                                              | 1223/200000 [02:24<6:10:44,  8.94it/s]
+Elapsed [0:02:22], Iteration [1210/200000], D/loss_real: -0.8928, D/loss_fake: -3.0982, D/loss_cls: 2.4441, D/loss_gp: 0.0137, G/loss_fake: -0.0899, G/loss_rec: 0.2709, G/loss_cls: 3.1518
+
+  1%|▉                                                                                                                                                              | 1241/200000 [02:26<6:43:31,  8.21it/s]
+Elapsed [0:02:24], Iteration [1230/200000], D/loss_real: -8.8637, D/loss_fake: 5.3976, D/loss_cls: 1.9602, D/loss_gp: 0.0472, G/loss_fake: -3.7364, G/loss_rec: 0.2749, G/loss_cls: 2.1983
+
+  1%|█                                                                                                                                                              | 1259/200000 [02:28<5:47:38,  9.53it/s]
+Elapsed [0:02:27], Iteration [1250/200000], D/loss_real: -3.7009, D/loss_fake: 1.4024, D/loss_cls: 2.2813, D/loss_gp: 0.0128, G/loss_fake: -0.4233, G/loss_rec: 0.2489, G/loss_cls: 2.4446
+
+  1%|█                                                                                                                                                              | 1277/200000 [02:30<6:16:15,  8.80it/s]
+
+  1%|█                                                                                                                                                              | 1293/200000 [02:32<6:07:18,  9.02it/s]
+Elapsed [0:02:30], Iteration [1280/200000], D/loss_real: -1.4169, D/loss_fake: -1.6405, D/loss_cls: 2.6789, D/loss_gp: 0.0466, G/loss_fake: 0.8907, G/loss_rec: 0.2223, G/loss_cls: 2.6458
+
+  1%|█                                                                                                                                                              | 1311/200000 [02:34<6:44:03,  8.20it/s]
+Elapsed [0:02:33], Iteration [1300/200000], D/loss_real: -12.8113, D/loss_fake: 8.3662, D/loss_cls: 1.5362, D/loss_gp: 0.0545, G/loss_fake: -8.8819, G/loss_rec: 0.2707, G/loss_cls: 1.3014
+
+  1%|█                                                                                                                                                              | 1327/200000 [02:36<6:46:39,  8.14it/s]
+
+  1%|█                                                                                                                                                              | 1344/200000 [02:38<5:54:57,  9.33it/s]
+Elapsed [0:02:36], Iteration [1330/200000], D/loss_real: -8.9280, D/loss_fake: 5.8604, D/loss_cls: 1.9771, D/loss_gp: 0.0069, G/loss_fake: -6.7702, G/loss_rec: 0.2451, G/loss_cls: 2.3897
+
+  1%|█                                                                                                                                                              | 1362/200000 [02:40<6:26:03,  8.58it/s]
+Elapsed [0:02:39], Iteration [1350/200000], D/loss_real: -13.4874, D/loss_fake: 10.2704, D/loss_cls: 1.9387, D/loss_gp: 0.0330, G/loss_fake: -8.4034, G/loss_rec: 0.2305, G/loss_cls: 2.3371
+
+  1%|█                                                                                                                                                              | 1379/200000 [02:42<5:54:06,  9.35it/s]
+Elapsed [0:02:41], Iteration [1370/200000], D/loss_real: -7.5556, D/loss_fake: 5.1698, D/loss_cls: 2.2544, D/loss_gp: 0.0035, G/loss_fake: -3.4428, G/loss_rec: 0.2268, G/loss_cls: 2.4773
+
+  1%|█                                                                                                                                                              | 1390/200000 [02:43<7:23:59,  7.46it/s]
+
+  1%|█                                                                                                                                                              | 1409/200000 [02:45<5:48:20,  9.50it/s]
+Elapsed [0:02:45], Iteration [1400/200000], D/loss_real: -15.0240, D/loss_fake: 11.3243, D/loss_cls: 1.9942, D/loss_gp: 0.0214, G/loss_fake: -12.5765, G/loss_rec: 0.2298, G/loss_cls: 2.1682
+
+  1%|█▏                                                                                                                                                             | 1426/200000 [02:47<6:22:52,  8.64it/s]
+Elapsed [0:02:47], Iteration [1420/200000], D/loss_real: 5.7145, D/loss_fake: -7.4444, D/loss_cls: 2.4948, D/loss_gp: 0.0067, G/loss_fake: 8.5868, G/loss_rec: 0.2136, G/loss_cls: 2.5650
+
+  1%|█▏                                                                                                                                                             | 1444/200000 [02:49<5:27:59, 10.09it/s]
+Elapsed [0:02:49], Iteration [1440/200000], D/loss_real: -26.5314, D/loss_fake: 21.2800, D/loss_cls: 2.0376, D/loss_gp: 0.0642, G/loss_fake: -18.0551, G/loss_rec: 0.2460, G/loss_cls: 2.7722
+
+  1%|█▏                                                                                                                                                             | 1464/200000 [02:52<5:47:28,  9.52it/s]
+
+  1%|█▏                                                                                                                                                             | 1480/200000 [02:54<6:56:59,  7.93it/s]
+Elapsed [0:02:52], Iteration [1470/200000], D/loss_real: -3.4333, D/loss_fake: -3.4594, D/loss_cls: 2.0296, D/loss_gp: 0.0950, G/loss_fake: 3.5953, G/loss_rec: 0.2526, G/loss_cls: 1.7701
+
+  1%|█▏                                                                                                                                                             | 1498/200000 [02:55<6:05:48,  9.04it/s]
+Elapsed [0:02:55], Iteration [1490/200000], D/loss_real: -4.8197, D/loss_fake: 3.1340, D/loss_cls: 2.3846, D/loss_gp: 0.0031, G/loss_fake: -2.9694, G/loss_rec: 0.2592, G/loss_cls: 2.2109
+
+  1%|█▏                                                                                                                                                             | 1515/200000 [02:58<7:20:27,  7.51it/s]
+Elapsed [0:02:57], Iteration [1510/200000], D/loss_real: -3.9661, D/loss_fake: -1.0464, D/loss_cls: 1.8553, D/loss_gp: 0.0715, G/loss_fake: -1.4317, G/loss_rec: 0.2600, G/loss_cls: 2.1578
+
+  1%|█▏                                                                                                                                                             | 1532/200000 [03:00<6:31:50,  8.44it/s]
+
+  1%|█▏                                                                                                                                                             | 1549/200000 [03:02<6:00:46,  9.17it/s]
+Elapsed [0:03:01], Iteration [1540/200000], D/loss_real: -3.8172, D/loss_fake: 1.4123, D/loss_cls: 2.3863, D/loss_gp: 0.0193, G/loss_fake: -2.4075, G/loss_rec: 0.2086, G/loss_cls: 2.5447
+
+  1%|█▏                                                                                                                                                             | 1565/200000 [03:04<7:22:23,  7.48it/s]
+Elapsed [0:03:03], Iteration [1560/200000], D/loss_real: -13.7402, D/loss_fake: 11.7652, D/loss_cls: 2.1171, D/loss_gp: 0.0133, G/loss_fake: -9.5775, G/loss_rec: 0.2221, G/loss_cls: 1.8494
+
+  1%|█▎                                                                                                                                                             | 1582/200000 [03:06<6:29:02,  8.50it/s]
+
+  1%|█▎                                                                                                                                                             | 1599/200000 [03:08<5:58:18,  9.23it/s]
+Elapsed [0:03:07], Iteration [1590/200000], D/loss_real: -10.3288, D/loss_fake: 7.3477, D/loss_cls: 1.8997, D/loss_gp: 0.0119, G/loss_fake: -5.4920, G/loss_rec: 0.2343, G/loss_cls: 2.3972
+
+  1%|█▎                                                                                                                                                             | 1615/200000 [03:10<7:28:45,  7.37it/s]
+Elapsed [0:03:09], Iteration [1610/200000], D/loss_real: -4.6462, D/loss_fake: 1.2754, D/loss_cls: 2.8883, D/loss_gp: 0.0114, G/loss_fake: 0.2556, G/loss_rec: 0.2224, G/loss_cls: 2.8763
+
+  1%|█▎                                                                                                                                                             | 1632/200000 [03:12<6:46:39,  8.13it/s]
+
+  1%|█▎                                                                                                                                                             | 1649/200000 [03:14<5:58:55,  9.21it/s]
+Elapsed [0:03:13], Iteration [1640/200000], D/loss_real: -7.1858, D/loss_fake: 3.9102, D/loss_cls: 1.9269, D/loss_gp: 0.0338, G/loss_fake: -4.1404, G/loss_rec: 0.2237, G/loss_cls: 2.5051
+
+  1%|█▎                                                                                                                                                             | 1665/200000 [03:16<7:19:31,  7.52it/s]
+Elapsed [0:03:15], Iteration [1660/200000], D/loss_real: -7.4726, D/loss_fake: 3.1350, D/loss_cls: 2.1899, D/loss_gp: 0.0360, G/loss_fake: 6.4034, G/loss_rec: 0.2385, G/loss_cls: 2.6094
+
+  1%|█▎                                                                                                                                                             | 1684/200000 [03:18<5:51:31,  9.40it/s]
+
+  1%|█▎                                                                                                                                                             | 1700/200000 [03:20<7:13:24,  7.63it/s]
+Elapsed [0:03:19], Iteration [1690/200000], D/loss_real: -13.8418, D/loss_fake: 8.9578, D/loss_cls: 2.0566, D/loss_gp: 0.0825, G/loss_fake: -6.5186, G/loss_rec: 0.2329, G/loss_cls: 2.9277
+
+  1%|█▎                                                                                                                                                             | 1719/200000 [03:22<5:45:17,  9.57it/s]
+Elapsed [0:03:21], Iteration [1710/200000], D/loss_real: -2.5643, D/loss_fake: -2.8836, D/loss_cls: 2.2517, D/loss_gp: 0.0820, G/loss_fake: 6.0282, G/loss_rec: 0.2387, G/loss_cls: 2.4843
+
+  1%|█▍                                                                                                                                                             | 1735/200000 [03:24<6:54:42,  7.97it/s]
+
+  1%|█▍                                                                                                                                                             | 1753/200000 [03:26<5:53:54,  9.34it/s]
+Elapsed [0:03:24], Iteration [1740/200000], D/loss_real: -6.2794, D/loss_fake: 4.0536, D/loss_cls: 1.9065, D/loss_gp: 0.0295, G/loss_fake: -5.0023, G/loss_rec: 0.2127, G/loss_cls: 2.0053
+
+  1%|█▍                                                                                                                                                             | 1771/200000 [03:28<6:29:45,  8.48it/s]
+Elapsed [0:03:27], Iteration [1760/200000], D/loss_real: -7.7501, D/loss_fake: 5.5223, D/loss_cls: 2.0135, D/loss_gp: 0.0049, G/loss_fake: -5.8443, G/loss_rec: 0.2031, G/loss_cls: 2.1778
+
+  1%|█▍                                                                                                                                                             | 1789/200000 [03:30<5:36:21,  9.82it/s]
+Elapsed [0:03:29], Iteration [1780/200000], D/loss_real: -11.1259, D/loss_fake: 6.2143, D/loss_cls: 2.9837, D/loss_gp: 0.0781, G/loss_fake: -3.7619, G/loss_rec: 0.2413, G/loss_cls: 3.1684
+
+  1%|█▍                                                                                                                                                             | 1809/200000 [03:32<5:25:44, 10.14it/s]
+Elapsed [0:03:31], Iteration [1800/200000], D/loss_real: -10.1217, D/loss_fake: 6.7634, D/loss_cls: 2.3852, D/loss_gp: 0.0079, G/loss_fake: -5.3513, G/loss_rec: 0.2384, G/loss_cls: 2.6409
+
+  1%|█▍                                                                                                                                                             | 1827/200000 [03:34<6:02:36,  9.11it/s]
+
+  1%|█▍                                                                                                                                                             | 1843/200000 [03:36<5:51:16,  9.40it/s]
+Elapsed [0:03:34], Iteration [1830/200000], D/loss_real: -7.4318, D/loss_fake: 5.3379, D/loss_cls: 1.9226, D/loss_gp: 0.0223, G/loss_fake: -3.5913, G/loss_rec: 0.2194, G/loss_cls: 2.2213
+
+  1%|█▍                                                                                                                                                             | 1863/200000 [03:38<5:57:55,  9.23it/s]
+Elapsed [0:03:37], Iteration [1850/200000], D/loss_real: -6.2936, D/loss_fake: 2.4114, D/loss_cls: 2.0283, D/loss_gp: 0.0082, G/loss_fake: -3.7367, G/loss_rec: 0.2109, G/loss_cls: 2.2772
+
+  1%|█▍                                                                                                                                                             | 1881/200000 [03:40<6:24:13,  8.59it/s]
+Elapsed [0:03:39], Iteration [1870/200000], D/loss_real: -6.7777, D/loss_fake: 1.8380, D/loss_cls: 1.7397, D/loss_gp: 0.0299, G/loss_fake: 1.0802, G/loss_rec: 0.2377, G/loss_cls: 2.2829
+
+  1%|█▌                                                                                                                                                             | 1899/200000 [03:42<5:42:25,  9.64it/s]
+Elapsed [0:03:41], Iteration [1890/200000], D/loss_real: -8.2830, D/loss_fake: 4.0546, D/loss_cls: 1.7544, D/loss_gp: 0.0252, G/loss_fake: -6.1979, G/loss_rec: 0.2458, G/loss_cls: 1.8916
+
+  1%|█▌                                                                                                                                                             | 1917/200000 [03:44<6:02:39,  9.10it/s]
+
+  1%|█▌                                                                                                                                                             | 1933/200000 [03:46<6:00:32,  9.16it/s]
+Elapsed [0:03:44], Iteration [1920/200000], D/loss_real: 4.6655, D/loss_fake: -8.5522, D/loss_cls: 2.3298, D/loss_gp: 0.0235, G/loss_fake: 8.4870, G/loss_rec: 0.1980, G/loss_cls: 3.1295
+
+  1%|█▌                                                                                                                                                             | 1953/200000 [03:48<5:53:11,  9.35it/s]
+Elapsed [0:03:47], Iteration [1940/200000], D/loss_real: -1.1539, D/loss_fake: -0.1636, D/loss_cls: 2.4165, D/loss_gp: 0.0267, G/loss_fake: 1.9609, G/loss_rec: 0.2246, G/loss_cls: 2.4741
+
+  1%|█▌                                                                                                                                                             | 1971/200000 [03:50<6:23:05,  8.62it/s]
+Elapsed [0:03:49], Iteration [1960/200000], D/loss_real: -13.4474, D/loss_fake: 9.6955, D/loss_cls: 2.1255, D/loss_gp: 0.0159, G/loss_fake: -13.3253, G/loss_rec: 0.2099, G/loss_cls: 2.2517
+
+  1%|█▌                                                                                                                                                             | 1989/200000 [03:52<5:23:49, 10.19it/s]
+Elapsed [0:03:51], Iteration [1980/200000], D/loss_real: -6.8214, D/loss_fake: 3.5842, D/loss_cls: 1.9572, D/loss_gp: 0.0077, G/loss_fake: -5.2665, G/loss_rec: 0.2443, G/loss_cls: 2.2993
+  1%|█▌                                                                                                                                                             | 1999/200000 [03:54<6:26:24,  8.54it/s]
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 165, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 87, in main
+    solver.train(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 525, in train
+    save_image(self.denorm(x_concat.data.cpu()), sample_path, nrow=1, padding=0)
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torchvision/utils.py", line 151, in save_image
+    im.save(fp, format=format)
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/PIL/Image.py", line 2428, in save
+    fp = builtins.open(filename, "w+b")
+PermissionError: [Errno 13] Permission denied: '/home/yerinyoon/code/anonymousNet/service_model_save_point/2000-images.jpg'
+Elapsed [0:03:53], Iteration [2000/200000], D/loss_real: -15.6062, D/loss_fake: 12.5433, D/loss_cls: 1.6685, D/loss_gp: 0.0398, G/loss_fake: -16.3365, G/loss_rec: 0.2235, G/loss_cls: 1.7288

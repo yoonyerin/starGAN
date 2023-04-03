@@ -1,0 +1,25 @@
+Finished preprocessing the CelebA dataset...
+200600
+torch.cuda.is_available(): True
+torch.cuda.get_device_name(): NVIDIA RTX A6000
+  0%|                                                                                                                                                                                                                                                | 0/200000 [00:00<?, ?it/s]/home/yerinyoon/anaconda3/envs/new/lib/python3.9/site-packages/torch/nn/_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+Finished preprocessing the CelebA dataset...
+200600
+Start training...
+
+  0%|                                                                                                                                                                                                                                    | 2/200000 [00:05<155:58:22,  2.81s/it]
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 165, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 87, in main
+    solver.train(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 459, in train
+    self.d_optimizer.step()
+  File "/home/yerinyoon/anaconda3/envs/new/lib/python3.9/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/yerinyoon/anaconda3/envs/new/lib/python3.9/site-packages/torch/optim/adam.py", line 108, in step
+    F.adam(params_with_grad,
+  File "/home/yerinyoon/anaconda3/envs/new/lib/python3.9/site-packages/torch/optim/functional.py", line 94, in adam
+    denom = (exp_avg_sq.sqrt() / math.sqrt(bias_correction2)).add_(eps)
+KeyboardInterrupt

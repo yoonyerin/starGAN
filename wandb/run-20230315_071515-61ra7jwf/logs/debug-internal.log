@@ -1,0 +1,474 @@
+2023-03-15 07:15:15,377 INFO    StreamThr :50273 [internal.py:wandb_internal():87] W&B internal server running at pid: 50273, started at: 2023-03-15 07:15:15.376761
+2023-03-15 07:15:15,380 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status
+2023-03-15 07:15:15,385 INFO    WriterThread:50273 [datastore.py:open_for_write():85] open: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/run-61ra7jwf.wandb
+2023-03-15 07:15:15,387 DEBUG   SenderThread:50273 [sender.py:send():336] send: header
+2023-03-15 07:15:15,388 DEBUG   SenderThread:50273 [sender.py:send():336] send: run
+2023-03-15 07:15:15,971 INFO    SenderThread:50273 [dir_watcher.py:__init__():219] watching files in: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files
+2023-03-15 07:15:15,971 INFO    SenderThread:50273 [sender.py:_start_run_threads():1078] run started: 61ra7jwf with start time 1678832115.373347
+2023-03-15 07:15:15,971 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: summary_record
+2023-03-15 07:15:15,971 INFO    SenderThread:50273 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-15 07:15:15,976 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: check_version
+2023-03-15 07:15:15,976 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: check_version
+2023-03-15 07:15:16,088 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: run_start
+2023-03-15 07:15:16,096 DEBUG   HandlerThread:50273 [system_info.py:__init__():31] System info init
+2023-03-15 07:15:16,096 DEBUG   HandlerThread:50273 [system_info.py:__init__():46] System info init done
+2023-03-15 07:15:16,096 INFO    HandlerThread:50273 [system_monitor.py:start():183] Starting system monitor
+2023-03-15 07:15:16,097 INFO    SystemMonitor:50273 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-03-15 07:15:16,098 INFO    HandlerThread:50273 [system_monitor.py:probe():204] Collecting system info
+2023-03-15 07:15:16,099 INFO    SystemMonitor:50273 [interfaces.py:start():187] Started cpu monitoring
+2023-03-15 07:15:16,101 INFO    SystemMonitor:50273 [interfaces.py:start():187] Started disk monitoring
+2023-03-15 07:15:16,107 INFO    SystemMonitor:50273 [interfaces.py:start():187] Started gpu monitoring
+2023-03-15 07:15:16,109 INFO    SystemMonitor:50273 [interfaces.py:start():187] Started memory monitoring
+2023-03-15 07:15:16,111 INFO    SystemMonitor:50273 [interfaces.py:start():187] Started network monitoring
+2023-03-15 07:15:16,204 DEBUG   HandlerThread:50273 [system_info.py:probe():195] Probing system
+2023-03-15 07:15:16,205 DEBUG   HandlerThread:50273 [system_info.py:_probe_git():180] Probing git
+2023-03-15 07:15:16,214 DEBUG   HandlerThread:50273 [system_info.py:_probe_git():188] Probing git done
+2023-03-15 07:15:16,214 DEBUG   HandlerThread:50273 [system_info.py:probe():240] Probing system done
+2023-03-15 07:15:16,214 DEBUG   HandlerThread:50273 [system_monitor.py:probe():213] {'os': 'Linux-4.15.0-112-generic-x86_64-with-glibc2.27', 'python': '3.10.9', 'heartbeatAt': '2023-03-14T22:15:16.204170', 'startedAt': '2023-03-14T22:15:15.365086', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/yerinyoon/code/anonymousNet/starGAN/stargan.py', 'codePath': 'starGAN/stargan.py', 'git': {'remote': 'https://github.com/yoonyerin/anonymousNet.git', 'commit': '4f097ac8a7f6a34f4425af7538323086b20e6742'}, 'email': 'yerinyoon@ewhain.net', 'root': '/home/yerinyoon/code/anonymousNet', 'host': 'ubuntu', 'username': 'yerinyoon', 'executable': '/home/yerinyoon/anaconda3/envs/pytorch/bin/python', 'cpu_count': 56, 'cpu_count_logical': 112, 'cpu_freq': {'current': 1018.042589285714, 'min': 800.0, 'max': 2601.0}, 'cpu_freq_per_core': [{'current': 800.774, 'min': 800.0, 'max': 2601.0}, {'current': 801.3, 'min': 800.0, 'max': 2601.0}, {'current': 1001.099, 'min': 800.0, 'max': 2601.0}, {'current': 2600.0, 'min': 800.0, 'max': 2601.0}, {'current': 801.26, 'min': 800.0, 'max': 2601.0}, {'current': 801.312, 'min': 800.0, 'max': 2601.0}, {'current': 856.558, 'min': 800.0, 'max': 2601.0}, {'current': 801.247, 'min': 800.0, 'max': 2601.0}, {'current': 801.703, 'min': 800.0, 'max': 2601.0}, {'current': 800.862, 'min': 800.0, 'max': 2601.0}, {'current': 800.29, 'min': 800.0, 'max': 2601.0}, {'current': 800.838, 'min': 800.0, 'max': 2601.0}, {'current': 801.263, 'min': 800.0, 'max': 2601.0}, {'current': 801.717, 'min': 800.0, 'max': 2601.0}, {'current': 800.858, 'min': 800.0, 'max': 2601.0}, {'current': 800.838, 'min': 800.0, 'max': 2601.0}, {'current': 2327.009, 'min': 800.0, 'max': 2601.0}, {'current': 800.835, 'min': 800.0, 'max': 2601.0}, {'current': 800.873, 'min': 800.0, 'max': 2601.0}, {'current': 800.868, 'min': 800.0, 'max': 2601.0}, {'current': 801.32, 'min': 800.0, 'max': 2601.0}, {'current': 801.299, 'min': 800.0, 'max': 2601.0}, {'current': 801.267, 'min': 800.0, 'max': 2601.0}, {'current': 801.242, 'min': 800.0, 'max': 2601.0}, {'current': 801.315, 'min': 800.0, 'max': 2601.0}, {'current': 800.427, 'min': 800.0, 'max': 2601.0}, {'current': 801.294, 'min': 800.0, 'max': 2601.0}, {'current': 1010.191, 'min': 800.0, 'max': 2601.0}, {'current': 800.798, 'min': 800.0, 'max': 2601.0}, {'current': 1482.142, 'min': 800.0, 'max': 2601.0}, {'current': 800.838, 'min': 800.0, 'max': 2601.0}, {'current': 800.419, 'min': 800.0, 'max': 2601.0}, {'current': 800.828, 'min': 800.0, 'max': 2601.0}, {'current': 970.426, 'min': 800.0, 'max': 2601.0}, {'current': 800.846, 'min': 800.0, 'max': 2601.0}, {'current': 801.207, 'min': 800.0, 'max': 2601.0}, {'current': 893.802, 'min': 800.0, 'max': 2601.0}, {'current': 801.248, 'min': 800.0, 'max': 2601.0}, {'current': 801.284, 'min': 800.0, 'max': 2601.0}, {'current': 1102.177, 'min': 800.0, 'max': 2601.0}, {'current': 801.257, 'min': 800.0, 'max': 2601.0}, {'current': 801.244, 'min': 800.0, 'max': 2601.0}, {'current': 801.68, 'min': 800.0, 'max': 2601.0}, {'current': 800.798, 'min': 800.0, 'max': 2601.0}, {'current': 800.856, 'min': 800.0, 'max': 2601.0}, {'current': 851.13, 'min': 800.0, 'max': 2601.0}, {'current': 1970.014, 'min': 800.0, 'max': 2601.0}, {'current': 800.839, 'min': 800.0, 'max': 2601.0}, {'current': 801.696, 'min': 800.0, 'max': 2601.0}, {'current': 800.412, 'min': 800.0, 'max': 2601.0}, {'current': 801.214, 'min': 800.0, 'max': 2601.0}, {'current': 1402.024, 'min': 800.0, 'max': 2601.0}, {'current': 800.81, 'min': 800.0, 'max': 2601.0}, {'current': 1936.159, 'min': 800.0, 'max': 2601.0}, {'current': 1084.122, 'min': 800.0, 'max': 2601.0}, {'current': 1470.917, 'min': 800.0, 'max': 2601.0}, {'current': 846.251, 'min': 800.0, 'max': 2601.0}, {'current': 1101.468, 'min': 800.0, 'max': 2601.0}, {'current': 1068.12, 'min': 800.0, 'max': 2601.0}, {'current': 2600.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.423, 'min': 800.0, 'max': 2601.0}, {'current': 1080.051, 'min': 800.0, 'max': 2601.0}, {'current': 1011.347, 'min': 800.0, 'max': 2601.0}, {'current': 800.425, 'min': 800.0, 'max': 2601.0}, {'current': 839.163, 'min': 800.0, 'max': 2601.0}, {'current': 800.891, 'min': 800.0, 'max': 2601.0}, {'current': 801.349, 'min': 800.0, 'max': 2601.0}, {'current': 800.852, 'min': 800.0, 'max': 2601.0}, {'current': 816.03, 'min': 800.0, 'max': 2601.0}, {'current': 801.304, 'min': 800.0, 'max': 2601.0}, {'current': 800.875, 'min': 800.0, 'max': 2601.0}, {'current': 2602.315, 'min': 800.0, 'max': 2601.0}, {'current': 1107.156, 'min': 800.0, 'max': 2601.0}, {'current': 800.858, 'min': 800.0, 'max': 2601.0}, {'current': 800.903, 'min': 800.0, 'max': 2601.0}, {'current': 800.882, 'min': 800.0, 'max': 2601.0}, {'current': 801.35, 'min': 800.0, 'max': 2601.0}, {'current': 801.331, 'min': 800.0, 'max': 2601.0}, {'current': 933.047, 'min': 800.0, 'max': 2601.0}, {'current': 2600.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.445, 'min': 800.0, 'max': 2601.0}, {'current': 2600.0, 'min': 800.0, 'max': 2601.0}, {'current': 801.298, 'min': 800.0, 'max': 2601.0}, {'current': 2600.0, 'min': 800.0, 'max': 2601.0}, {'current': 801.201, 'min': 800.0, 'max': 2601.0}, {'current': 800.82, 'min': 800.0, 'max': 2601.0}, {'current': 801.3, 'min': 800.0, 'max': 2601.0}, {'current': 801.295, 'min': 800.0, 'max': 2601.0}, {'current': 801.251, 'min': 800.0, 'max': 2601.0}, {'current': 2597.642, 'min': 800.0, 'max': 2601.0}, {'current': 801.306, 'min': 800.0, 'max': 2601.0}, {'current': 801.633, 'min': 800.0, 'max': 2601.0}, {'current': 801.263, 'min': 800.0, 'max': 2601.0}, {'current': 800.871, 'min': 800.0, 'max': 2601.0}, {'current': 1494.903, 'min': 800.0, 'max': 2601.0}, {'current': 1459.862, 'min': 800.0, 'max': 2601.0}, {'current': 800.854, 'min': 800.0, 'max': 2601.0}, {'current': 801.302, 'min': 800.0, 'max': 2601.0}, {'current': 800.859, 'min': 800.0, 'max': 2601.0}, {'current': 1499.059, 'min': 800.0, 'max': 2601.0}, {'current': 801.32, 'min': 800.0, 'max': 2601.0}, {'current': 801.298, 'min': 800.0, 'max': 2601.0}, {'current': 800.421, 'min': 800.0, 'max': 2601.0}, {'current': 800.873, 'min': 800.0, 'max': 2601.0}, {'current': 1059.345, 'min': 800.0, 'max': 2601.0}, {'current': 801.68, 'min': 800.0, 'max': 2601.0}, {'current': 800.413, 'min': 800.0, 'max': 2601.0}, {'current': 800.863, 'min': 800.0, 'max': 2601.0}, {'current': 801.248, 'min': 800.0, 'max': 2601.0}, {'current': 2600.0, 'min': 800.0, 'max': 2601.0}, {'current': 801.27, 'min': 800.0, 'max': 2601.0}, {'current': 801.235, 'min': 800.0, 'max': 2601.0}], 'disk': {'total': 1802.3645973205566, 'used': 223.66351699829102}, 'gpu': 'NVIDIA RTX A6000', 'gpu_count': 3, 'gpu_devices': [{'name': 'NVIDIA RTX A6000', 'memory_total': 51050315776}, {'name': 'NVIDIA RTX A6000', 'memory_total': 47848357888}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51050315776}], 'memory': {'total': 251.5168571472168}}
+2023-03-15 07:15:16,215 INFO    HandlerThread:50273 [system_monitor.py:probe():214] Finished collecting system info
+2023-03-15 07:15:16,215 INFO    HandlerThread:50273 [system_monitor.py:probe():217] Publishing system info
+2023-03-15 07:15:16,215 DEBUG   HandlerThread:50273 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-15 07:15:16,215 DEBUG   HandlerThread:50273 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-15 07:15:16,215 DEBUG   HandlerThread:50273 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-03-15 07:15:16,975 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/wandb-summary.json
+2023-03-15 07:15:16,975 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/requirements.txt
+2023-03-15 07:15:16,976 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/conda-environment.yaml
+2023-03-15 07:15:18,512 DEBUG   HandlerThread:50273 [system_info.py:_save_conda():86] Saving conda packages done
+2023-03-15 07:15:18,515 INFO    HandlerThread:50273 [system_monitor.py:probe():219] Finished publishing system info
+2023-03-15 07:15:18,525 DEBUG   SenderThread:50273 [sender.py:send():336] send: files
+2023-03-15 07:15:18,525 INFO    SenderThread:50273 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-03-15 07:15:18,534 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-15 07:15:18,536 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: stop_status
+2023-03-15 07:15:18,763 DEBUG   SenderThread:50273 [sender.py:send():336] send: telemetry
+2023-03-15 07:15:18,763 DEBUG   SenderThread:50273 [sender.py:send():336] send: config
+2023-03-15 07:15:18,972 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/conda-environment.yaml
+2023-03-15 07:15:18,973 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/wandb-metadata.json
+2023-03-15 07:15:19,405 INFO    wandb-upload_0:50273 [upload_job.py:push():138] Uploaded file /tmp/tmpq05x1mgawandb/ko2jxig1-wandb-metadata.json
+2023-03-15 07:15:19,973 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:20,680 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:15:21,974 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:22,829 DEBUG   SenderThread:50273 [sender.py:send():336] send: telemetry
+2023-03-15 07:15:23,975 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:24,976 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:25,833 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:15:26,977 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:28,978 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:29,979 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:30,870 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:15:30,979 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:31,980 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:32,980 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:33,535 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:15:33,981 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:34,981 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:35,982 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:36,020 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:15:36,983 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:37,983 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:38,537 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:15:38,984 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:39,984 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:40,985 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:41,197 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:15:41,985 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:42,986 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:43,539 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:15:43,986 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:44,987 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:45,987 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:46,327 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:15:46,988 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/config.yaml
+2023-03-15 07:15:46,988 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:47,989 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:48,541 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:15:48,989 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:49,990 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:50,990 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:51,782 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:15:51,991 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:52,991 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:53,541 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:15:53,992 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:54,992 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:55,993 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:56,880 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:15:56,993 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:57,994 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:58,542 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:15:58,994 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:15:59,995 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:00,995 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:01,931 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:16:01,996 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:02,996 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:03,543 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:16:03,997 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:04,997 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:05,998 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:06,998 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:07,128 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:16:07,999 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:08,545 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:16:08,999 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:10,000 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:11,002 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:12,003 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:12,226 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:16:13,546 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:16:14,004 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:16,005 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:16,112 DEBUG   SystemMonitor:50273 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2023-03-15 07:16:16,116 DEBUG   SenderThread:50273 [sender.py:send():336] send: stats
+2023-03-15 07:16:17,502 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:16:18,006 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:18,548 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:16:20,007 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:22,008 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:22,594 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:16:23,549 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:16:24,009 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:26,010 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:27,866 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:16:28,011 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:28,551 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:16:30,013 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:32,014 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:32,950 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:16:33,552 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:16:34,015 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:36,016 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:38,017 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:38,183 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:16:38,553 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:16:40,018 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:42,019 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:43,266 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:16:43,555 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:16:44,020 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:46,022 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:46,121 DEBUG   SenderThread:50273 [sender.py:send():336] send: stats
+2023-03-15 07:16:48,023 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:48,558 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:16:48,574 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:16:50,024 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:52,025 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:53,557 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:16:53,696 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:16:54,026 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:56,027 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:58,028 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:16:58,559 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:16:58,889 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:17:00,030 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:02,031 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:02,301 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:17:02,321 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:17:02,331 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:17:02,332 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:17:02,336 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:17:02,337 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:17:02,339 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:17:02,340 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:17:02,342 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:17:02,343 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:17:02,344 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:17:02,345 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:17:02,347 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:17:02,348 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:17:03,560 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:17:03,947 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:17:04,032 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:06,033 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:08,034 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:08,561 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:17:08,986 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:17:10,035 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:12,037 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:13,562 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:17:14,038 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:14,077 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:17:16,038 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:16,125 DEBUG   SenderThread:50273 [sender.py:send():336] send: stats
+2023-03-15 07:17:18,040 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:18,564 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:17:19,255 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:17:20,041 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:22,042 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:23,565 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:17:24,043 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:24,398 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:17:26,043 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:28,045 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:28,566 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:17:29,405 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:17:30,046 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:32,047 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:33,567 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:17:34,050 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:34,526 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:17:36,051 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:38,051 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:38,568 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:17:39,719 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:17:40,053 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:42,054 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:43,569 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:17:44,055 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:44,932 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:17:46,056 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:46,128 DEBUG   SenderThread:50273 [sender.py:send():336] send: stats
+2023-03-15 07:17:48,057 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:48,571 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:17:50,058 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:50,137 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:17:52,059 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:53,572 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:17:54,061 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:55,327 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:17:56,062 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:58,063 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:17:58,573 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:18:00,064 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:00,338 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:18:02,065 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:03,574 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:18:04,066 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:05,478 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:18:06,067 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:08,068 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:08,575 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:18:10,069 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:10,759 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:18:12,070 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:13,576 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:18:14,071 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:15,852 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:18:16,073 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:16,130 DEBUG   SenderThread:50273 [sender.py:send():336] send: stats
+2023-03-15 07:18:18,073 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:18,578 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:18:20,075 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:20,931 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:18:22,076 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:23,579 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:18:24,077 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:26,078 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:26,090 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:18:28,079 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:28,580 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:18:30,080 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:31,120 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:18:32,088 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:33,582 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:18:34,089 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:36,093 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:36,159 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:18:38,094 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:38,583 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:18:39,094 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:39,104 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:18:39,121 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:18:39,132 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:18:39,134 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:18:39,137 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:18:39,139 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:18:39,145 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:18:39,146 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:18:39,148 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:18:39,149 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:18:39,154 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:18:39,155 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:18:39,156 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:18:39,158 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-15 07:18:40,095 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:41,095 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:41,344 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:18:42,096 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:43,096 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:43,584 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:18:44,097 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:45,097 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:46,098 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:46,134 DEBUG   SenderThread:50273 [sender.py:send():336] send: stats
+2023-03-15 07:18:46,349 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:18:47,098 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:48,099 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:48,585 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:18:49,099 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:50,100 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:51,100 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:51,610 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:18:52,101 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:53,101 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:53,586 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:18:54,102 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:55,102 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:56,102 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:56,662 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:18:57,103 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:58,103 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:18:58,588 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:18:59,104 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:00,105 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:01,105 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:01,744 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:19:02,106 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:03,106 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:03,589 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:19:04,107 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:05,107 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:06,108 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:06,892 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:19:07,108 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:08,109 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:08,590 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:19:09,110 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:10,110 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:11,111 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:11,993 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:19:12,111 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:13,112 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:13,591 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:19:14,112 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:15,113 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:16,113 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:16,138 DEBUG   SenderThread:50273 [sender.py:send():336] send: stats
+2023-03-15 07:19:16,908 DEBUG   SenderThread:50273 [sender.py:send():336] send: exit
+2023-03-15 07:19:16,908 INFO    SenderThread:50273 [sender.py:send_exit():559] handling exit code: 1
+2023-03-15 07:19:16,908 INFO    SenderThread:50273 [sender.py:send_exit():561] handling runtime: 240
+2023-03-15 07:19:16,909 INFO    SenderThread:50273 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-15 07:19:16,910 INFO    SenderThread:50273 [sender.py:send_exit():567] send defer
+2023-03-15 07:19:16,910 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: defer
+2023-03-15 07:19:16,910 INFO    HandlerThread:50273 [handler.py:handle_request_defer():170] handle defer: 0
+2023-03-15 07:19:16,911 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: defer
+2023-03-15 07:19:16,911 INFO    SenderThread:50273 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-03-15 07:19:16,911 INFO    SenderThread:50273 [sender.py:transition_state():587] send defer: 1
+2023-03-15 07:19:16,912 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: defer
+2023-03-15 07:19:16,912 INFO    HandlerThread:50273 [handler.py:handle_request_defer():170] handle defer: 1
+2023-03-15 07:19:16,912 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: defer
+2023-03-15 07:19:16,912 INFO    SenderThread:50273 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-03-15 07:19:16,913 INFO    SenderThread:50273 [sender.py:transition_state():587] send defer: 2
+2023-03-15 07:19:16,913 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: defer
+2023-03-15 07:19:16,913 INFO    HandlerThread:50273 [handler.py:handle_request_defer():170] handle defer: 2
+2023-03-15 07:19:16,913 INFO    HandlerThread:50273 [system_monitor.py:finish():193] Stopping system monitor
+2023-03-15 07:19:16,914 DEBUG   SystemMonitor:50273 [system_monitor.py:_start():168] Finished system metrics aggregation loop
+2023-03-15 07:19:16,914 DEBUG   SystemMonitor:50273 [system_monitor.py:_start():172] Publishing last batch of metrics
+2023-03-15 07:19:16,918 INFO    HandlerThread:50273 [interfaces.py:finish():199] Joined cpu monitor
+2023-03-15 07:19:16,919 INFO    HandlerThread:50273 [interfaces.py:finish():199] Joined disk monitor
+2023-03-15 07:19:17,114 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/wandb-summary.json
+2023-03-15 07:19:17,114 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:17,478 INFO    HandlerThread:50273 [interfaces.py:finish():199] Joined gpu monitor
+2023-03-15 07:19:17,478 INFO    HandlerThread:50273 [interfaces.py:finish():199] Joined memory monitor
+2023-03-15 07:19:17,478 INFO    HandlerThread:50273 [interfaces.py:finish():199] Joined network monitor
+2023-03-15 07:19:17,480 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: defer
+2023-03-15 07:19:17,481 INFO    SenderThread:50273 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-03-15 07:19:17,481 INFO    SenderThread:50273 [sender.py:transition_state():587] send defer: 3
+2023-03-15 07:19:17,481 DEBUG   SenderThread:50273 [sender.py:send():336] send: stats
+2023-03-15 07:19:17,484 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: defer
+2023-03-15 07:19:17,484 INFO    HandlerThread:50273 [handler.py:handle_request_defer():170] handle defer: 3
+2023-03-15 07:19:17,494 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:19:17,503 DEBUG   SenderThread:50273 [sender.py:send():336] send: history
+2023-03-15 07:19:17,507 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: summary_record
+2023-03-15 07:19:17,510 INFO    SenderThread:50273 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-15 07:19:17,511 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: defer
+2023-03-15 07:19:17,511 INFO    SenderThread:50273 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-03-15 07:19:17,511 INFO    SenderThread:50273 [sender.py:transition_state():587] send defer: 4
+2023-03-15 07:19:17,511 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: defer
+2023-03-15 07:19:17,511 INFO    HandlerThread:50273 [handler.py:handle_request_defer():170] handle defer: 4
+2023-03-15 07:19:17,512 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: defer
+2023-03-15 07:19:17,512 INFO    SenderThread:50273 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-03-15 07:19:17,512 INFO    SenderThread:50273 [sender.py:transition_state():587] send defer: 5
+2023-03-15 07:19:17,512 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: defer
+2023-03-15 07:19:17,512 INFO    HandlerThread:50273 [handler.py:handle_request_defer():170] handle defer: 5
+2023-03-15 07:19:17,522 DEBUG   SenderThread:50273 [sender.py:send():336] send: summary
+2023-03-15 07:19:17,524 INFO    SenderThread:50273 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-15 07:19:17,524 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: defer
+2023-03-15 07:19:17,525 INFO    SenderThread:50273 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-03-15 07:19:17,525 INFO    SenderThread:50273 [sender.py:transition_state():587] send defer: 6
+2023-03-15 07:19:17,525 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: defer
+2023-03-15 07:19:17,525 INFO    HandlerThread:50273 [handler.py:handle_request_defer():170] handle defer: 6
+2023-03-15 07:19:17,526 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: defer
+2023-03-15 07:19:17,526 INFO    SenderThread:50273 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-03-15 07:19:17,526 INFO    SenderThread:50273 [sender.py:transition_state():587] send defer: 7
+2023-03-15 07:19:17,526 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:19:17,527 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: defer
+2023-03-15 07:19:17,527 INFO    HandlerThread:50273 [handler.py:handle_request_defer():170] handle defer: 7
+2023-03-15 07:19:17,527 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: defer
+2023-03-15 07:19:17,528 INFO    SenderThread:50273 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-03-15 07:19:17,906 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-15 07:19:18,115 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/wandb-summary.json
+2023-03-15 07:19:18,115 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:19,115 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:19,550 INFO    SenderThread:50273 [sender.py:transition_state():587] send defer: 8
+2023-03-15 07:19:19,551 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: poll_exit
+2023-03-15 07:19:19,552 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: defer
+2023-03-15 07:19:19,552 INFO    HandlerThread:50273 [handler.py:handle_request_defer():170] handle defer: 8
+2023-03-15 07:19:19,553 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: defer
+2023-03-15 07:19:19,553 INFO    SenderThread:50273 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-03-15 07:19:19,579 INFO    SenderThread:50273 [sender.py:transition_state():587] send defer: 9
+2023-03-15 07:19:19,580 DEBUG   SenderThread:50273 [sender.py:send():336] send: artifact
+2023-03-15 07:19:19,584 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: defer
+2023-03-15 07:19:19,585 INFO    HandlerThread:50273 [handler.py:handle_request_defer():170] handle defer: 9
+2023-03-15 07:19:20,115 INFO    Thread-13 :50273 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:20,839 INFO    SenderThread:50273 [sender.py:send_artifact():1428] sent artifact job-https___github.com_yoonyerin_anonymousNet.git_starGAN_stargan.py - {'id': 'QXJ0aWZhY3Q6Mzk2ODY2MzE5', 'digest': '1e1782fb6d190e3185235e3465904e20', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_yoonyerin_anonymousNet.git_starGAN_stargan.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_yoonyerin_anonymousNet.git_starGAN_stargan.py', 'alias': 'v8'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU2ODY1NDAx', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Mzk2ODY2MzE5', 'versionIndex': 8}}, 'version': 'v8'}
+2023-03-15 07:19:20,839 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: defer
+2023-03-15 07:19:20,839 INFO    SenderThread:50273 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-03-15 07:19:20,839 INFO    SenderThread:50273 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-03-15 07:19:21,117 INFO    SenderThread:50273 [dir_watcher.py:finish():395] scan: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files
+2023-03-15 07:19:21,117 INFO    SenderThread:50273 [dir_watcher.py:finish():409] scan save: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/wandb-summary.json wandb-summary.json
+2023-03-15 07:19:21,117 INFO    SenderThread:50273 [dir_watcher.py:finish():409] scan save: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/config.yaml config.yaml
+2023-03-15 07:19:21,118 INFO    SenderThread:50273 [dir_watcher.py:finish():409] scan save: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/requirements.txt requirements.txt
+2023-03-15 07:19:21,124 INFO    SenderThread:50273 [dir_watcher.py:finish():409] scan save: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log output.log
+2023-03-15 07:19:21,130 INFO    SenderThread:50273 [dir_watcher.py:finish():409] scan save: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/conda-environment.yaml conda-environment.yaml
+2023-03-15 07:19:21,137 INFO    SenderThread:50273 [dir_watcher.py:finish():409] scan save: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/wandb-metadata.json wandb-metadata.json
+2023-03-15 07:19:21,143 INFO    SenderThread:50273 [sender.py:transition_state():587] send defer: 10
+2023-03-15 07:19:21,144 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: defer
+2023-03-15 07:19:21,149 INFO    HandlerThread:50273 [handler.py:handle_request_defer():170] handle defer: 10
+2023-03-15 07:19:21,150 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: defer
+2023-03-15 07:19:21,151 INFO    SenderThread:50273 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-03-15 07:19:21,151 INFO    SenderThread:50273 [file_pusher.py:finish():164] shutting down file pusher
+2023-03-15 07:19:21,802 INFO    wandb-upload_0:50273 [upload_job.py:push():138] Uploaded file /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/wandb-summary.json
+2023-03-15 07:19:21,929 INFO    wandb-upload_2:50273 [upload_job.py:push():138] Uploaded file /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/requirements.txt
+2023-03-15 07:19:21,974 INFO    wandb-upload_4:50273 [upload_job.py:push():138] Uploaded file /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/conda-environment.yaml
+2023-03-15 07:19:21,995 INFO    wandb-upload_1:50273 [upload_job.py:push():138] Uploaded file /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/config.yaml
+2023-03-15 07:19:22,009 INFO    wandb-upload_3:50273 [upload_job.py:push():138] Uploaded file /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/files/output.log
+2023-03-15 07:19:22,209 INFO    Thread-12 (_thread_body):50273 [sender.py:transition_state():587] send defer: 11
+2023-03-15 07:19:22,210 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: defer
+2023-03-15 07:19:22,210 INFO    HandlerThread:50273 [handler.py:handle_request_defer():170] handle defer: 11
+2023-03-15 07:19:22,211 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: defer
+2023-03-15 07:19:22,211 INFO    SenderThread:50273 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-03-15 07:19:22,211 INFO    SenderThread:50273 [file_pusher.py:join():169] waiting for file pusher
+2023-03-15 07:19:22,211 INFO    SenderThread:50273 [sender.py:transition_state():587] send defer: 12
+2023-03-15 07:19:22,212 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: defer
+2023-03-15 07:19:22,212 INFO    HandlerThread:50273 [handler.py:handle_request_defer():170] handle defer: 12
+2023-03-15 07:19:22,212 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: defer
+2023-03-15 07:19:22,213 INFO    SenderThread:50273 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-03-15 07:19:22,909 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-15 07:19:23,474 INFO    SenderThread:50273 [sender.py:transition_state():587] send defer: 13
+2023-03-15 07:19:23,474 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: defer
+2023-03-15 07:19:23,474 INFO    HandlerThread:50273 [handler.py:handle_request_defer():170] handle defer: 13
+2023-03-15 07:19:23,475 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: status_report
+2023-03-15 07:19:23,475 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: defer
+2023-03-15 07:19:23,475 INFO    SenderThread:50273 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-03-15 07:19:23,476 INFO    SenderThread:50273 [sender.py:transition_state():587] send defer: 14
+2023-03-15 07:19:23,476 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: defer
+2023-03-15 07:19:23,476 INFO    HandlerThread:50273 [handler.py:handle_request_defer():170] handle defer: 14
+2023-03-15 07:19:23,477 DEBUG   SenderThread:50273 [sender.py:send():336] send: final
+2023-03-15 07:19:23,477 DEBUG   SenderThread:50273 [sender.py:send():336] send: footer
+2023-03-15 07:19:23,477 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: defer
+2023-03-15 07:19:23,477 INFO    SenderThread:50273 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-03-15 07:19:23,478 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-15 07:19:23,479 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: poll_exit
+2023-03-15 07:19:23,480 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: server_info
+2023-03-15 07:19:23,481 DEBUG   SenderThread:50273 [sender.py:send_request():363] send_request: server_info
+2023-03-15 07:19:23,484 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: get_summary
+2023-03-15 07:19:23,487 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: sampled_history
+2023-03-15 07:19:23,703 INFO    MainThread:50273 [wandb_run.py:_footer_history_summary_info():3429] rendering history
+2023-03-15 07:19:23,705 INFO    MainThread:50273 [wandb_run.py:_footer_history_summary_info():3461] rendering summary
+2023-03-15 07:19:23,705 INFO    MainThread:50273 [wandb_run.py:_footer_sync_info():3387] logging synced files
+2023-03-15 07:19:23,706 DEBUG   HandlerThread:50273 [handler.py:handle_request():144] handle_request: shutdown
+2023-03-15 07:19:23,707 INFO    HandlerThread:50273 [handler.py:finish():842] shutting down handler
+2023-03-15 07:19:24,481 INFO    WriterThread:50273 [datastore.py:close():298] close: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230315_071515-61ra7jwf/run-61ra7jwf.wandb
+2023-03-15 07:19:24,703 INFO    SenderThread:50273 [sender.py:finish():1504] shutting down sender
+2023-03-15 07:19:24,703 INFO    SenderThread:50273 [file_pusher.py:finish():164] shutting down file pusher
+2023-03-15 07:19:24,703 INFO    SenderThread:50273 [file_pusher.py:join():169] waiting for file pusher

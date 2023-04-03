@@ -1,0 +1,12 @@
+Finished preprocessing the CelebA dataset...
+torch.cuda.is_available(): True
+torch.cuda.get_device_name(): NVIDIA RTX A6000
+Loading the trained models from step 200000...
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 173, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 97, in main
+    solver.create_img_data()
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 703, in create_img_data
+    c_trg= self.create_labels(c_org, self.c_dim, self.dataset,self.selected_attrs, self.reversed_attrs, self.fixed_attrs)
+TypeError: Solver.create_labels() takes from 2 to 5 positional arguments but 7 were given

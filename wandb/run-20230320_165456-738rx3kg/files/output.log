@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 184, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 72, in main
+    celeba_loader=get_loader(config.celeba_image_dir, config.attr_path, config.selected_attrs,
+  File "/home/yerinyoon/code/anonymousNet/data/celeba/data_extract.py", line 117, in get_loader
+    dataset = CelebA(image_dir, attr_path, selected_attrs, all_attrs, transform, mode)
+  File "/home/yerinyoon/code/anonymousNet/data/celeba/data_extract.py", line 35, in __init__
+    self.preprocess()
+  File "/home/yerinyoon/code/anonymousNet/data/celeba/data_extract.py", line 76, in preprocess
+    self.full_label.append(np.squeeze(np.array([filename, full_label])))
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (2,) + inhomogeneous part.

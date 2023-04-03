@@ -1,0 +1,18 @@
+Finished preprocessing the CelebA dataset...
+200600
+torch.cuda.is_available(): True
+torch.cuda.get_device_name(): NVIDIA RTX A6000
+Finished preprocessing the CelebA dataset...
+200600
+Start training...
+  0%|                                                                                                                                                                                                                                                | 0/200000 [00:00<?, ?it/s]/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+  0%|                                                                                                                                                                                                                                                | 0/200000 [00:04<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 168, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 87, in main
+    solver.train(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 518, in train
+    'D/loss_gp':d_loss_gp.item(), "G.loss_fake":g_loss_fake.item(), "G/loss_rec":g_loss_rec.item(),
+UnboundLocalError: local variable 'g_loss_fake' referenced before assignment

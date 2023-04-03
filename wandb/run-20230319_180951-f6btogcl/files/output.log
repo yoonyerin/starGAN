@@ -1,0 +1,10 @@
+
+Finished preprocessing the CelebA dataset...
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 173, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 82, in main
+    solver = Solver(celeba_loader, rafd_loader, config, wandb)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 160, in __init__
+    self.fake_label_dir=config.fake_label_dir
+AttributeError: 'Namespace' object has no attribute 'fake_label_dir'

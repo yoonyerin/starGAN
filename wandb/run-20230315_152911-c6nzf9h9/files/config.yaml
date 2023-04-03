@@ -1,0 +1,169 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.11
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: true
+    python_version: 3.10.9
+    start_time: 1678861751.536764
+    t:
+      1:
+      - 1
+      - 41
+      - 55
+      2:
+      - 1
+      - 41
+      - 55
+      3:
+      - 1
+      - 23
+      4: 3.10.9
+      5: 0.13.11
+      8:
+      - 2
+      - 5
+attr_path:
+  desc: null
+  value: /home/yerinyoon/data/zip/data/celeba/list_attr_celeba.txt
+batch_size:
+  desc: null
+  value: 16
+beta1:
+  desc: null
+  value: 0.5
+beta2:
+  desc: null
+  value: 0.999
+c2_dim:
+  desc: null
+  value: 6
+c_dim:
+  desc: null
+  value: 6
+celeba_crop_size:
+  desc: null
+  value: 178
+celeba_image_dir:
+  desc: null
+  value: /home/yerinyoon/data/zip/data/celeba/img_align_celeba
+d_conv_dim:
+  desc: null
+  value: 64
+d_lr:
+  desc: null
+  value: 0.0001
+d_repeat_num:
+  desc: null
+  value: 6
+dataset:
+  desc: null
+  value: CelebA
+g_conv_dim:
+  desc: null
+  value: 64
+g_lr:
+  desc: null
+  value: 0.0001
+g_repeat_num:
+  desc: null
+  value: 6
+gpu_id:
+  desc: null
+  value: 0
+image_size:
+  desc: null
+  value: 128
+input_dim:
+  desc: null
+  value: null
+lambda_cls:
+  desc: null
+  value: 1
+lambda_gp:
+  desc: null
+  value: 10
+lambda_rec:
+  desc: null
+  value: 10
+log_dir:
+  desc: null
+  value: ../
+log_step:
+  desc: null
+  value: 10
+lr_update_step:
+  desc: null
+  value: 1000
+mode:
+  desc: null
+  value: train
+model_save_dir:
+  desc: null
+  value: /home/yerinyoon/code/anonymousNet/sevice_model_save_point
+model_save_step:
+  desc: null
+  value: 10000
+n_critic:
+  desc: null
+  value: 5
+num_iters:
+  desc: null
+  value: 180000
+num_iters_decay:
+  desc: null
+  value: 50000
+num_workers:
+  desc: null
+  value: 1
+output_prefix:
+  desc: null
+  value: model
+rafd_crop_size:
+  desc: null
+  value: 256
+result_dir:
+  desc: null
+  value: /home/yerinyoon/code/anonymousNet/service_model_save_point
+resume_from:
+  desc: null
+  value: /home/yerinyoon/code/anonymousNet/service_model_save_point
+resume_iters:
+  desc: null
+  value: 180000
+sample_dir:
+  desc: null
+  value: /home/yerinyoon/code/anonymousNet/service_model_save_point
+sample_step:
+  desc: null
+  value: 1000
+selected_attrs:
+  desc: null
+  value:
+  - Narrow_Eyes
+  - Pointy_Nose
+  - Gray_Hair
+  - Straight_Hair
+  - Bushy_Eyebrows
+  - Pale_Skin
+service_attrs:
+  desc: null
+  value:
+  - Narrow_Eyes
+  - Pointy_Nose
+  - Gray_Hair
+  - Straight_Hair
+  - Bushy_Eyebrows
+  - PaleSkin
+service_model_save_dir:
+  desc: null
+  value: /home/yerinyoon/code/anonymousNet/service_model_save_point
+test_iters:
+  desc: null
+  value: 200000
+use_tensorboard:
+  desc: null
+  value: true

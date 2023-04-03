@@ -1,0 +1,16 @@
+Finished preprocessing the CelebA dataset...
+200600
+torch.cuda.is_available(): True
+torch.cuda.get_device_name(): NVIDIA RTX A6000
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 165, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 87, in main
+    solver.train(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 360, in train
+    tmp_dataset = CelebA(config.celeba_image_dir, config.attr_path, self.selected_attrs, transform, mode='train')
+  File "/home/yerinyoon/code/anonymousNet/data/celeba/data_extract.py", line 33, in __init__
+    self.preprocess()
+  File "/home/yerinyoon/code/anonymousNet/data/celeba/data_extract.py", line 53, in preprocess
+    split = line.split()
+KeyboardInterrupt

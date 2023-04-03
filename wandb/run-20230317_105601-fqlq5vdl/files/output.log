@@ -1,0 +1,14 @@
+Finished preprocessing the CelebA dataset...
+torch.cuda.is_available(): True
+torch.cuda.get_device_name(): NVIDIA RTX A6000
+Loading the trained models from step 200000...
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 168, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 92, in main
+    solver.test()
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 629, in test
+    c_trg= self.create_labels(c_org, self.c_dim, self.dataset,self.selected_attrs)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 303, in create_labels
+    for i, attr_name in enumerate(fixed_attrs):
+TypeError: 'NoneType' object is not iterable

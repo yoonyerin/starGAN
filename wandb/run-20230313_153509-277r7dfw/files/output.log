@@ -1,0 +1,25 @@
+Finished preprocessing the CelebA dataset...
+200600
+torch.cuda.is_available(): True
+torch.cuda.get_device_name(): NVIDIA RTX A6000
+  0%|                                                                                                                                                                                                                                                | 0/200000 [00:00<?, ?it/s]/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+  0%|                                                                                                                                                                                                                                     | 1/200000 [00:01<70:14:29,  1.26s/it]
+Finished preprocessing the CelebA dataset...
+200600
+
+
+
+  0%|                                                                                                                                                                                                                                     | 6/200000 [00:10<98:46:19,  1.78s/it]
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 165, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 87, in main
+    solver.train(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 457, in train
+    self.reset_grad()
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 237, in reset_grad
+    self.d_optimizer.zero_grad()
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/optim/optimizer.py", line 279, in zero_grad
+    p.grad.zero_()
+KeyboardInterrupt

@@ -1,0 +1,1 @@
+{"D/loss_real": [], "D/loss_fake": [], "D/loss_cls": [], "D/loss_gp": [], "G/loss_fake": [], "G/loss_rec": [], "G/loss_cls": [], "_timestamp": 1678861759.4880528, "_runtime": 7.951288938522339, "_step": 0, "_wandb": {"runtime": 7}}

@@ -1,0 +1,22 @@
+Finished preprocessing the CelebA dataset...
+200600
+torch.cuda.is_available(): True
+torch.cuda.get_device_name(): NVIDIA RTX A6000
+Finished preprocessing the CelebA dataset...
+200600
+Start training...
+  0%|                                                                                                                                                                                                                                                | 0/200000 [00:00<?, ?it/s]/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+  0%|                                                                                                                                                                                                                                                | 0/200000 [00:03<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 168, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 87, in main
+    solver.train(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 439, in train
+    d_loss_cls = self.classification_loss(out_cls, label_org, self.dataset)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 334, in classification_loss
+    return F.binary_cross_entropy_with_logits(logit, target, size_average=False) / logit.size(0)
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/functional.py", line 3160, in binary_cross_entropy_with_logits
+    raise ValueError("Target size ({}) must be the same as input size ({})".format(target.size(), input.size()))
+ValueError: Target size (torch.Size([16, 13])) must be the same as input size (torch.Size([16, 6]))

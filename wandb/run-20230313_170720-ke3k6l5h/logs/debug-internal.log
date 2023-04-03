@@ -1,0 +1,17 @@
+2023-03-13 17:07:20,389 INFO    StreamThr :30522 [internal.py:wandb_internal():87] W&B internal server running at pid: 30522, started at: 2023-03-13 17:07:20.388594
+2023-03-13 17:07:20,396 DEBUG   HandlerThread:30522 [handler.py:handle_request():144] handle_request: status
+2023-03-13 17:07:20,399 INFO    WriterThread:30522 [datastore.py:open_for_write():85] open: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230313_170720-ke3k6l5h/run-ke3k6l5h.wandb
+2023-03-13 17:07:20,400 DEBUG   SenderThread:30522 [sender.py:send():336] send: header
+2023-03-13 17:07:20,415 DEBUG   SenderThread:30522 [sender.py:send():336] send: run
+2023-03-13 17:07:20,603 DEBUG   HandlerThread:30522 [handler.py:handle_request():144] handle_request: shutdown
+2023-03-13 17:07:20,604 INFO    HandlerThread:30522 [handler.py:finish():842] shutting down handler
+2023-03-13 17:07:20,919 INFO    SenderThread:30522 [dir_watcher.py:__init__():219] watching files in: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230313_170720-ke3k6l5h/files
+2023-03-13 17:07:20,919 INFO    SenderThread:30522 [sender.py:_start_run_threads():1078] run started: ke3k6l5h with start time 1678694840.383761
+2023-03-13 17:07:20,920 INFO    SenderThread:30522 [sender.py:finish():1504] shutting down sender
+2023-03-13 17:07:20,920 INFO    SenderThread:30522 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-03-13 17:07:21,415 INFO    WriterThread:30522 [datastore.py:close():298] close: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230313_170720-ke3k6l5h/run-ke3k6l5h.wandb
+2023-03-13 17:07:21,920 INFO    SenderThread:30522 [dir_watcher.py:finish():395] scan: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230313_170720-ke3k6l5h/files
+2023-03-13 17:07:21,920 INFO    SenderThread:30522 [dir_watcher.py:finish():409] scan save: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230313_170720-ke3k6l5h/files/config.yaml config.yaml
+2023-03-13 17:07:21,921 INFO    SenderThread:30522 [file_pusher.py:finish():164] shutting down file pusher
+2023-03-13 17:07:21,921 INFO    SenderThread:30522 [file_pusher.py:join():169] waiting for file pusher
+2023-03-13 17:07:22,562 INFO    wandb-upload_0:30522 [upload_job.py:push():138] Uploaded file /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230313_170720-ke3k6l5h/files/config.yaml

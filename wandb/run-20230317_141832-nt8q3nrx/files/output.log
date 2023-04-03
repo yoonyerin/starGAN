@@ -1,0 +1,13 @@
+Finished preprocessing the CelebA dataset...
+torch.cuda.is_available(): True
+torch.cuda.get_device_name(): NVIDIA RTX A6000
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 173, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 82, in main
+    solver = Solver(celeba_loader, rafd_loader, config, wandb)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 184, in __init__
+    self.build_model()
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 206, in build_model
+    self.G.to(self.device)
+AttributeError: 'Solver' object has no attribute 'device'

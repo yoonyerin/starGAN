@@ -1,0 +1,38 @@
+2023-03-16 09:53:51,444 INFO    MainThread:65626 [wandb_setup.py:_flush():76] Configure stats pid to 65626
+2023-03-16 09:53:51,444 INFO    MainThread:65626 [wandb_setup.py:_flush():76] Loading settings from /home/yerinyoon/.config/wandb/settings
+2023-03-16 09:53:51,444 INFO    MainThread:65626 [wandb_setup.py:_flush():76] Loading settings from /home/yerinyoon/code/anonymousNet/starGAN/wandb/settings
+2023-03-16 09:53:51,444 INFO    MainThread:65626 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-03-16 09:53:51,444 INFO    MainThread:65626 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-03-16 09:53:51,444 INFO    MainThread:65626 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'starGAN/stargan.py', 'program': '/home/yerinyoon/code/anonymousNet/starGAN/stargan.py'}
+2023-03-16 09:53:51,445 INFO    MainThread:65626 [wandb_init.py:_log_setup():506] Logging user logs to /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230316_095351-clue29bm/logs/debug.log
+2023-03-16 09:53:51,445 INFO    MainThread:65626 [wandb_init.py:_log_setup():507] Logging internal logs to /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230316_095351-clue29bm/logs/debug-internal.log
+2023-03-16 09:53:51,445 INFO    MainThread:65626 [wandb_init.py:init():546] calling init triggers
+2023-03-16 09:53:51,445 INFO    MainThread:65626 [wandb_init.py:init():552] wandb.init called with sweep_config: {}
+config: {}
+2023-03-16 09:53:51,446 INFO    MainThread:65626 [wandb_init.py:init():602] starting backend
+2023-03-16 09:53:51,446 INFO    MainThread:65626 [wandb_init.py:init():606] setting up manager
+2023-03-16 09:53:51,450 INFO    MainThread:65626 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-16 09:53:51,451 INFO    MainThread:65626 [wandb_init.py:init():613] backend started and connected
+2023-03-16 09:53:51,456 INFO    MainThread:65626 [wandb_init.py:init():701] updated telemetry
+2023-03-16 09:53:51,466 INFO    MainThread:65626 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2023-03-16 09:53:51,962 INFO    MainThread:65626 [wandb_run.py:_on_init():2131] communicating current version
+2023-03-16 09:53:52,031 INFO    MainThread:65626 [wandb_run.py:_on_init():2140] got version response upgrade_message: "wandb version 0.14.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-16 09:53:52,032 INFO    MainThread:65626 [wandb_init.py:init():789] starting run threads in backend
+2023-03-16 09:53:52,610 WARNING MainThread:65626 [wandb_init.py:init():1165] interrupted
+Traceback (most recent call last):
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1144, in init
+    run = wi.init()
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 801, in init
+    run_start_result = run_start_handle.wait(timeout=30)
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/threading.py", line 607, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

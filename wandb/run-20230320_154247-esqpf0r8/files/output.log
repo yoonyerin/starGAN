@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 184, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 72, in main
+    celeba_loader=get_loader(config.celeba_image_dir, config.attr_path, config.selected_attrs,
+  File "/home/yerinyoon/code/anonymousNet/data/celeba/data_extract.py", line 104, in get_loader
+    dataset = CelebA(image_dir, attr_path, selected_attrs, all_attrs, transform, mode)
+  File "/home/yerinyoon/code/anonymousNet/data/celeba/data_extract.py", line 35, in __init__
+    self.preprocess()
+  File "/home/yerinyoon/code/anonymousNet/data/celeba/data_extract.py", line 75, in preprocess
+    self.full_label=pd.DataFrame(self.full_label, columns=all_attrs)
+NameError: name 'all_attrs' is not defined

@@ -1,0 +1,10 @@
+Finished preprocessing the CelebA dataset...
+Finished preprocessing the CelebA dataset...
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 175, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 83, in main
+    solver = Solver(celeba_loader, rafd_loader, service_loader,  config, wandb)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 162, in __init__
+    self.real_label_dir=config.real_label_dir
+AttributeError: 'Namespace' object has no attribute 'real_label_dir'

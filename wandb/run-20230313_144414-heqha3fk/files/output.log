@@ -1,0 +1,36 @@
+Finished preprocessing the CelebA dataset...
+200600
+torch.cuda.is_available(): True
+torch.cuda.get_device_name(): NVIDIA RTX A6000
+Finished preprocessing the CelebA dataset...
+200600
+Start training...
+  0%|                                                                                                                                                                                                                                                | 0/200000 [00:00<?, ?it/s]/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+
+
+
+
+
+
+
+
+  0%|                                                                                                                                                                                                                                    | 9/200000 [01:53<702:07:58, 12.64s/it]
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 165, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 87, in main
+    solver.train(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 445, in train
+    x_fake = self.G(x_real, c_trg)
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 84, in forward
+    return self.main(x)
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/container.py", line 204, in forward
+    input = module(input)
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+KeyboardInterrupt

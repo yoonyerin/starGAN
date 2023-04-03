@@ -1,0 +1,18 @@
+Finished preprocessing the CelebA dataset...
+torch.cuda.is_available(): True
+torch.cuda.get_device_name(): NVIDIA RTX A6000
+Loading the trained models from step 200000...
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 173, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 97, in main
+    solver.create_img_data()
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 706, in create_img_data
+    save_image(self.denorm(x_real.data.cpu()), real_result_path, nrow=1, padding=0)
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torchvision/utils.py", line 151, in save_image
+    im.save(fp, format=format)
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/PIL/Image.py", line 2428, in save
+    fp = builtins.open(filename, "w+b")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yerinyoon/code/anonymousNets/real_img_dir/1-original-images.jpg'
