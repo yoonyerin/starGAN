@@ -116,16 +116,14 @@ class Discriminator(nn.Module):
 class Solver(object):
     """Solver for training and testing StarGAN."""
 
-    def __init__(self, celeba_loader, rafd_loader,service_loader,full_label,   config, wandb):
+    def __init__(self, celeba_loader, rafd_loader,service_loader,config, wandb):
         """Initialize configurations."""
 
         # Data loader.
         self.celeba_loader = celeba_loader
         self.rafd_loader = rafd_loader
         self.service_loader=service_loader
-
-        self.full_label=full_label
-
+        
         self.wandb=wandb
 
         # Model configurations.
@@ -184,6 +182,10 @@ class Solver(object):
         self.sample_step = config.sample_step
         self.model_save_step = config.model_save_step
         self.lr_update_step = config.lr_update_step
+        
+        self.selected_attrs=config.selected[config.group_index]
+        self.fixed_attrs=config.fixed_attrs[config.group_index]
+        self.reversed_attrs=config.reversed_attrs[config.group_index]
 
         # Build the model and tensorboard.
         self.build_model()
@@ -271,13 +273,13 @@ class Solver(object):
         return out
 #train
 
-    def create_labels(self, c_org, c_dim=6, dataset='CelebA',selected_attrs=None):
+    def create_labels(self, c_org, c_dim=6, dataset='CelebA'):
         """Generate target domain labels for debugging and testing."""
         # Get hair color indices.
         if self.mode=="train":
             if dataset == 'CelebA':
-                hair_color_indices = []#hair color는 하나의 column에서 제공하고자 한다
-                for i, attr_name in enumerate(selected_attrs):
+                hair_color_indices = [] #hair color는 하나의 column에서 제공하고자 한다
+                for i, attr_name in enumerate(self.selected_attrs):
                     if attr_name in ['Black_Hair', 'Blond_Hair', 'Brown_Hair', 'Gray_Hair']:
                         hair_color_indices.append(i)
     
