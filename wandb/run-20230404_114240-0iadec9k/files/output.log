@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 278, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 72, in main
+    celeba_loader=get_loader(config, config.celeba_image_dir, config.attr_path,
+  File "/home/yerinyoon/code/anonymousNet/data/celeba/data_extract.py", line 141, in get_loader
+    dataset = CelebA(image_dir, attr_path, selected_attrs, all_attrs, transform, mode)
+  File "/home/yerinyoon/code/anonymousNet/data/celeba/data_extract.py", line 29, in __init__
+    self.mode = config.mode
+AttributeError: 'str' object has no attribute 'mode'

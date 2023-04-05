@@ -25,6 +25,8 @@ import torch
 
 import random
 
+#os.environ("CUDA_VISIBLE_DEVICES")=0
+
 sys.path.append("/home/yerinyoon/code/anonymousNet/data/celeba/")
 from data_extract import *
 
@@ -115,19 +117,19 @@ class Discriminator(nn.Module):
 
 class Solver(object):
     """Solver for training and testing StarGAN."""
-
-    def __init__(self, celeba_loader, rafd_loader,service_loader,config, wandb):
+        
+    def __init__(self, celeba_loader, rafd_loader,config, wandb, c_dim):
         """Initialize configurations."""
 
         # Data loader.
         self.celeba_loader = celeba_loader
         self.rafd_loader = rafd_loader
-        self.service_loader=service_loader
+        #self.service_loader=service_loader
         
         self.wandb=wandb
 
         # Model configurations.
-        self.c_dim = config.c_dim
+        self.c_dim = c_dim
         self.c2_dim = config.c2_dim
         self.image_size = config.image_size
         self.g_conv_dim = config.g_conv_dim
@@ -149,9 +151,9 @@ class Solver(object):
         self.beta1 = config.beta1
         self.beta2 = config.beta2
         self.resume_iters = config.resume_iters
-        self.selected_attrs = config.selected_attrs
-        self.reversed_attrs=config.reversed_attrs
-        self.fixed_attrs=config.fixed_attrs
+        self.selected_attrs = config.selected
+        #self.reversed_attrs=config.reversed_attrs
+         #self.fixed_attrs=config.fixed_attrs
         # Test configurations.
         self.test_iters = config.test_iters
 
@@ -161,12 +163,13 @@ class Solver(object):
         self.fake_label_file=config.fake_label_file
         self.real_label_file=config.real_label_file
         # Miscellaneous.
-        self.use_tensorboard = config.use_tensorboard
-        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-        
+        #self.use_tensorboard = config.use_tensorboard
+        #self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+       
         print(f"torch.cuda.is_available(): {torch.cuda.is_available()}")
-
-        torch.cuda.set_device(config.gpu_id)
+        print(f"gpu_id: {config.gpu_id}")
+        print(f"type: {type(config.gpu_id)}")
+        torch.cuda.device(config.gpu_id)
         print(f"torch.cuda.get_device_name(): {torch.cuda.get_device_name(torch.cuda.current_device())}")
 
         # Directories.
@@ -175,7 +178,7 @@ class Solver(object):
         self.model_save_dir = config.model_save_dir
         self.result_dir = config.result_dir
 
-        self.service_model_save_dir = config.service_model_save_dir
+        #self.service_model_save_dir = config.service_model_save_dir
 
         # Step size.
         self.log_step = config.log_step
@@ -183,17 +186,20 @@ class Solver(object):
         self.model_save_step = config.model_save_step
         self.lr_update_step = config.lr_update_step
         
+        self.all_attrs=config.all_attrs
         self.selected_attrs=config.selected[config.group_index]
         self.fixed_attrs=config.fixed_attrs[config.group_index]
         self.reversed_attrs=config.reversed_attrs[config.group_index]
 
         # Build the model and tensorboard.
         self.build_model()
-        if self.use_tensorboard:
-            self.build_tensorboard()
+ #        if self.use_tensorboard:
+ #            self.build_tensorboard()
+ #
+        self.mode=config.mode      
 
-        self.mode=config.mode        
-
+        
+        self.fixed=config.target_attr[config.group_index]
 
 
     def build_model(self):
@@ -210,8 +216,8 @@ class Solver(object):
 #         self.print_network(self.G, 'G')
 #         self.print_network(self.D, 'D')
             
-        self.G.to(self.device)
-        self.D.to(self.device)
+        self.G=self.G.cuda()
+        self.D=self.D.cuda()
 
     def print_network(self, model, name):
         """Print out the network information."""
@@ -224,8 +230,8 @@ class Solver(object):
     def restore_model(self, resume_iters):
         """Restore the trained generator and discriminator."""
         print('Loading the trained models from step {}...'.format(resume_iters))
-        G_path = os.path.join(self.model_save_dir, '{}-G.ckpt'.format(resume_iters))
-        D_path = os.path.join(self.model_save_dir, '{}-D.ckpt'.format(resume_iters))
+        G_path = os.path.join(self.model_save_dir, self.fixed+'{}-G.ckpt'.format(resume_iters))
+        D_path = os.path.join(self.model_save_dir, self.fixed+'{}-D.ckpt'.format(resume_iters))
         self.G.load_state_dict(torch.load(G_path, map_location=lambda storage, loc: storage))
         self.D.load_state_dict(torch.load(D_path, map_location=lambda storage, loc: storage))
 
@@ -253,7 +259,7 @@ class Solver(object):
 
     def gradient_penalty(self, y, x):
         """Compute gradient penalty: (L2_norm(dy/dx) - 1)**2."""
-        weight = torch.ones(y.size()).to(self.device)
+        weight = torch.ones(y.size()).cuda()
         dydx = torch.autograd.grad(outputs=y,
                                    inputs=x,
                                    grad_outputs=weight,
@@ -303,26 +309,26 @@ class Solver(object):
                 elif dataset == 'RaFD':
                     c_trg = self.label2onehot(torch.ones(c_org.size(0))*i, c_dim)
     
-                c_trg_list.append(c_trg.to(self.device))
+                c_trg_list.append(c_trg.cuda())
             return c_trg_list
        #        # Get hair color indices.
         else:
             if dataset == 'CelebA':
                 c_trg = c_org.clone()
                 hair_color_indices = []#hair color는 하나의 column에서 제공하고자 한다
-                for i, attr_name in enumerate(selected_attrs): 
+                for i, attr_name in enumerate(self.selected_attrs): 
                     if attr_name in ['Black_Hair', 'Blond_Hair', 'Brown_Hair', 'Gray_Hair']:
                         hair_color_indices.append(i)     
   
                 c_trg_list = []
-                for i, attr_name in enumerate(selected_attrs): 
+                for i, attr_name in enumerate(self.selected_attrs): 
                     if i in hair_color_indices:
                         c_trg[:, i] = 1
                         for j in hair_color_indices:
                             if j != i:
                                 c_trg[:, j] = 0
 
-                for i, attr_name in enumerate(selected_attrs):
+                for i, attr_name in enumerate(self.selected_attrs):
                     c_trg[:, i]=(c_trg[:, i]==0)
                     if attr_name in self.fixed_attrs:
                         c_trg[:, i] = (c_trg[:, i] == 0)
@@ -342,8 +348,8 @@ class Solver(object):
                     #c_trg[:, i] = (c_trg[:, i] == 0)  # Reverse attribute value.
             elif dataset == 'RaFD':
                 c_trg = self.label2onehot(torch.ones(c_org.size(0))*i, c_dim)
-    
-            return c_trg.to(self.device)
+                c_trg=c_trg.cuda() 
+            return c_trg
     
 #
 #    def create_labels(self, c_org, c_dim=6, dataset='CelebA',selected_attrs=None, reversed_attrs=None, fixed_attrs=None):
@@ -397,9 +403,6 @@ class Solver(object):
             data_loader = self.rafd_loader
 
         # Fetch fixed inputs for debugging.
-        seleted_pics = [17689, 12133, 150707, 112343, 23272, 11278, 6056, 34538, 36297]
-        
-        
         transform = []
         transform.append(T.RandomHorizontalFlip())
         transform.append(T.CenterCrop(178))
@@ -409,17 +412,33 @@ class Solver(object):
         transform = T.Compose(transform)
         
         
-        tmp_dataset = CelebA(config.celeba_image_dir, config.attr_path, self.selected_attrs, transform, mode='train')
-        x_fixed = [tmp_dataset[i-2000][0] for i in seleted_pics]
-        c_org = [tmp_dataset[i-2000][1] for i in seleted_pics]# 
+        tmp_dataset = CelebA(config.celeba_image_dir, config.attr_path, self.all_attrs, transform, config)
+        
+        import random
+        
+        #print(f"dataset length: {len(tmp_dataset)}")
+        selected_pics = []
+        num = random.randrange(0,len(tmp_dataset))
+        for i in range(8):
+            while num in selected_pics : 
+                num = random.randrange(0,len(tmp_dataset)) 
+            selected_pics.append(num)
+        
+        
+
+
+       
+    
+        x_fixed = [tmp_dataset[i-2000][0] for i in selected_pics]
+        c_org = [tmp_dataset[i-2000][1] for i in selected_pics]# 
         
         x_fixed = torch.stack(x_fixed)
         c_org = torch.stack(c_org)
         
 #         data_iter = iter(data_loader)
 #         x_fixed, c_org = next(data_iter)
-        x_fixed = x_fixed.to(self.device)
-        c_fixed_list = self.create_labels(c_org, self.c_dim, self.dataset, self.selected_attrs)
+        x_fixed = x_fixed.cuda()
+        c_fixed_list = self.create_labels(c_org, self.c_dim, self.dataset)
         # Learning rate cache for decaying.
         g_lr = self.g_lr
         d_lr = self.d_lr
@@ -458,7 +477,7 @@ class Solver(object):
             except:
                 data_iter = iter(data_loader)
                 x_real, label_org = next(data_iter)
-            print(label_org)
+            #print(label_org)
 
             rand_idx = torch.randperm(label_org.size(0))
             label_trg = label_org[rand_idx]
@@ -482,11 +501,11 @@ class Solver(object):
                 c_org = self.label2onehot(label_org, self.c_dim)
                 c_trg = self.label2onehot(label_trg, self.c_dim)
 
-            x_real = x_real.to(self.device)           # Input images.
-            c_org = c_org.to(self.device)             # Original domain labels.
-            c_trg = c_trg.to(self.device)             # Target domain labels.
-            label_org = label_org.to(self.device)     # Labels for computing classification loss.
-            label_trg = label_trg.to(self.device)     # Labels for computing classification loss.
+            x_real = x_real.cuda()           # Input images.
+            c_org = c_org.cuda()             # Original domain labels.
+            c_trg = c_trg.cuda()             # Target domain labels.
+            label_org = label_org.cuda()     # Labels for computing classification loss.
+            label_trg = label_trg.cuda()     # Labels for computing classification loss.
 
             # =================================================================================== #
             #                             2. Train the discriminator                              #
@@ -511,7 +530,7 @@ class Solver(object):
             d_loss_fake = torch.mean(out_src)
             
             
-            alpha = torch.rand(x_real.size(0), 1, 1, 1).to(self.device)
+            alpha = torch.rand(x_real.size(0), 1, 1, 1).cuda()
             x_hat = (alpha * x_real.data + (1 - alpha) * x_fake.data).requires_grad_(True)
             out_src, _ = self.D(x_hat)
             d_loss_gp = self.gradient_penalty(out_src, x_hat)
@@ -595,7 +614,7 @@ class Solver(object):
                     for c_fixed in c_fixed_list:
                         x_fake_list.append(self.G(x_fixed, c_fixed))
                     x_concat = torch.cat(x_fake_list, dim=3)
-                    sample_path = os.path.join(self.sample_dir, '{}-images.jpg'.format(i+1, i+1))
+                    sample_path = os.path.join(self.sample_dir, self.fixed+'{}-images.jpg'.format(i+1, i+1))
                     save_image(self.denorm(x_concat.data.cpu()), sample_path, nrow=1, padding=0)
                     print('Saved real and fake images into {}...'.format(sample_path))
                     
@@ -616,8 +635,8 @@ class Solver(object):
                     
             # Save model checkpoints.
             if (i+1) % self.model_save_step == 0:
-                G_path = os.path.join(self.model_save_dir,"iter{}", '{}-G.ckpt'.format(i+1, i+1))
-                D_path = os.path.join(self.model_save_dir,"iter{}", '{}-D.ckpt'.format(i+1, i+1))
+                G_path = os.path.join(self.model_save_dir, self.fixed+"{}-G.ckpt".format(i+1))
+                D_path = os.path.join(self.model_save_dir, self.fixed+"{}-D.ckpt".format(i+1))
                 torch.save(self.G.state_dict(), G_path)
                 torch.save(self.D.state_dict(), D_path)
                 print('Saved model checkpoints into {}...'.format(self.model_save_dir))
@@ -689,7 +708,7 @@ class Solver(object):
             for i, (x_real, c_org) in enumerate(data_loader):
 
                 # Prepare input images and target domain labels.
-                x_real = x_real.to(self.device)
+                x_real = x_real.cuda()
                 c_trg= self.create_labels(c_org, self.c_dim, self.dataset,self.selected_attrs)
 
                 # Translate 
@@ -699,13 +718,13 @@ class Solver(object):
 
                 # Save the translated images.
                 x_concat = torch.cat(x_fake_list, dim=3)
-                result_path = os.path.join(self.result_dir, '{}-skin-fixed-images.jpg'.format(i+1))
+                result_path = os.path.join(self.result_dir,self.fixed+'{}-skin-fixed-images.jpg'.format(i+1))
                 save_image(self.denorm(x_concat.data.cpu()), result_path, nrow=1, padding=0)
                 print('Saved real and fake images into {}...'.format(result_path))
                 
     def create_img_data(self):
-        print(self.full_label)
-        print(self.full_label.shape)
+        #print(self.full_label)
+        #print(self.full_label.shape)
         self.restore_model(self.test_iters)
         
         # Set data loader.
@@ -722,7 +741,7 @@ class Solver(object):
             for i, (x_real, c_org) in enumerate(data_loader):
 
                 # Prepare input images and target domain labels.
-                x_real = x_real.to(self.device)
+                x_real = x_real.cuda()
                 #x_fake=self.G(x_real, c_trg)
                 c_trg= self.create_labels(c_org, self.c_dim, self.dataset,self.selected_attrs)
                # print(c_trg)
@@ -738,9 +757,9 @@ class Solver(object):
                 #labels.append(c_org.data.cpu().tolist())
 
                 x_fake=self.G(x_real, c_trg)
-                real_result_path = os.path.join(self.real_img_dir, '{}-original-images.jpg'.format(i+1))
+                real_result_path = os.path.join(self.real_img_dir, self.fixed+'{}-original-images.jpg'.format(i+1))
                 save_image(self.denorm(x_real.data.cpu()), real_result_path, nrow=1, padding=0)
-                fake_result_path = os.path.join(self.fake_img_dir, '{}-deidentify-images.jpg'.format(i+1))
+                fake_result_path = os.path.join(self.fake_img_dir, self.fixed+'{}-deidentify-images.jpg'.format(i+1))
                 save_image(self.denorm(x_fake.data.cpu()), fake_result_path, nrow=1, padding=0)
 
                 print('Saved real and fake images into {}...'.format(i))
@@ -753,11 +772,11 @@ class Solver(object):
 
             print(new_labels.shape)
             new_labels=pd.DataFrame(new_labels, columns=self.selected_attrs)
-            service_labels=self.full_label.copy()
-            service_labels[self.selected_attrs]=new_labels
+            #service_labels=self.full_label.copy()
+           # service_labels[self.selected_attrs]=new_labels
 
-            service_labels.to_csv(self.fake_label_file)
-            self.full_label.to_csv(self.real_label_file)
+            #service_labels.to_csv(self.fake_label_file)
+           # self.full_label.to_csv(self.real_label_file)
             
             #labels=pd.DataFrame(labels, columns=self.selected_attrs)
             #labels.to_csv(self.real_label_file, index=False)

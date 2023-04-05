@@ -1,0 +1,184 @@
+2023-04-04 16:45:28,795 INFO    StreamThr :104626 [internal.py:wandb_internal():87] W&B internal server running at pid: 104626, started at: 2023-04-04 16:45:28.794240
+2023-04-04 16:45:28,797 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: status
+2023-04-04 16:45:28,800 INFO    WriterThread:104626 [datastore.py:open_for_write():85] open: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/run-3ofe954c.wandb
+2023-04-04 16:45:28,801 DEBUG   SenderThread:104626 [sender.py:send():336] send: header
+2023-04-04 16:45:28,801 DEBUG   SenderThread:104626 [sender.py:send():336] send: run
+2023-04-04 16:45:29,314 INFO    SenderThread:104626 [dir_watcher.py:__init__():219] watching files in: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files
+2023-04-04 16:45:29,314 INFO    SenderThread:104626 [sender.py:_start_run_threads():1078] run started: 3ofe954c with start time 1680594328.791538
+2023-04-04 16:45:29,314 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: summary_record
+2023-04-04 16:45:29,315 INFO    SenderThread:104626 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-04 16:45:29,319 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: check_version
+2023-04-04 16:45:29,320 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: check_version
+2023-04-04 16:45:29,384 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: run_start
+2023-04-04 16:45:29,392 DEBUG   HandlerThread:104626 [system_info.py:__init__():31] System info init
+2023-04-04 16:45:29,392 DEBUG   HandlerThread:104626 [system_info.py:__init__():46] System info init done
+2023-04-04 16:45:29,392 INFO    HandlerThread:104626 [system_monitor.py:start():183] Starting system monitor
+2023-04-04 16:45:29,393 INFO    SystemMonitor:104626 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-04-04 16:45:29,393 INFO    HandlerThread:104626 [system_monitor.py:probe():204] Collecting system info
+2023-04-04 16:45:29,394 INFO    SystemMonitor:104626 [interfaces.py:start():187] Started cpu monitoring
+2023-04-04 16:45:29,395 INFO    SystemMonitor:104626 [interfaces.py:start():187] Started disk monitoring
+2023-04-04 16:45:29,397 INFO    SystemMonitor:104626 [interfaces.py:start():187] Started gpu monitoring
+2023-04-04 16:45:29,399 INFO    SystemMonitor:104626 [interfaces.py:start():187] Started memory monitoring
+2023-04-04 16:45:29,405 INFO    SystemMonitor:104626 [interfaces.py:start():187] Started network monitoring
+2023-04-04 16:45:29,492 DEBUG   HandlerThread:104626 [system_info.py:probe():195] Probing system
+2023-04-04 16:45:29,494 DEBUG   HandlerThread:104626 [system_info.py:_probe_git():180] Probing git
+2023-04-04 16:45:29,504 DEBUG   HandlerThread:104626 [system_info.py:_probe_git():188] Probing git done
+2023-04-04 16:45:29,505 DEBUG   HandlerThread:104626 [system_info.py:probe():240] Probing system done
+2023-04-04 16:45:29,505 DEBUG   HandlerThread:104626 [system_monitor.py:probe():213] {'os': 'Linux-4.15.0-112-generic-x86_64-with-glibc2.27', 'python': '3.10.9', 'heartbeatAt': '2023-04-04T07:45:29.492501', 'startedAt': '2023-04-04T07:45:28.780527', 'docker': None, 'cuda': None, 'args': ('--mode', 'train '), 'state': 'running', 'program': '/home/yerinyoon/code/anonymousNet/starGAN/stargan.py', 'codePath': 'stargan.py', 'git': {'remote': 'https://github.com/yoonyerin/starGAN.git', 'commit': 'b4306af6dc1768aee0aff000851fd29a52e619c8'}, 'email': 'yerinyoon@ewhain.net', 'root': '/home/yerinyoon/code/anonymousNet/starGAN', 'host': 'ubuntu', 'username': 'yerinyoon', 'executable': '/home/yerinyoon/anaconda3/envs/pytorch/bin/python', 'cpu_count': 56, 'cpu_count_logical': 112, 'cpu_freq': {'current': 1011.3574107142858, 'min': 800.0, 'max': 2601.0}, 'cpu_freq_per_core': [{'current': 800.085, 'min': 800.0, 'max': 2601.0}, {'current': 801.233, 'min': 800.0, 'max': 2601.0}, {'current': 801.222, 'min': 800.0, 'max': 2601.0}, {'current': 800.41, 'min': 800.0, 'max': 2601.0}, {'current': 801.198, 'min': 800.0, 'max': 2601.0}, {'current': 800.82, 'min': 800.0, 'max': 2601.0}, {'current': 800.834, 'min': 800.0, 'max': 2601.0}, {'current': 801.163, 'min': 800.0, 'max': 2601.0}, {'current': 801.627, 'min': 800.0, 'max': 2601.0}, {'current': 1072.132, 'min': 800.0, 'max': 2601.0}, {'current': 800.418, 'min': 800.0, 'max': 2601.0}, {'current': 800.404, 'min': 800.0, 'max': 2601.0}, {'current': 800.823, 'min': 800.0, 'max': 2601.0}, {'current': 1133.696, 'min': 800.0, 'max': 2601.0}, {'current': 801.638, 'min': 800.0, 'max': 2601.0}, {'current': 801.201, 'min': 800.0, 'max': 2601.0}, {'current': 800.818, 'min': 800.0, 'max': 2601.0}, {'current': 801.186, 'min': 800.0, 'max': 2601.0}, {'current': 800.838, 'min': 800.0, 'max': 2601.0}, {'current': 889.973, 'min': 800.0, 'max': 2601.0}, {'current': 800.825, 'min': 800.0, 'max': 2601.0}, {'current': 1070.655, 'min': 800.0, 'max': 2601.0}, {'current': 800.792, 'min': 800.0, 'max': 2601.0}, {'current': 800.779, 'min': 800.0, 'max': 2601.0}, {'current': 800.839, 'min': 800.0, 'max': 2601.0}, {'current': 850.293, 'min': 800.0, 'max': 2601.0}, {'current': 801.224, 'min': 800.0, 'max': 2601.0}, {'current': 800.778, 'min': 800.0, 'max': 2601.0}, {'current': 800.817, 'min': 800.0, 'max': 2601.0}, {'current': 800.361, 'min': 800.0, 'max': 2601.0}, {'current': 801.29, 'min': 800.0, 'max': 2601.0}, {'current': 800.877, 'min': 800.0, 'max': 2601.0}, {'current': 800.421, 'min': 800.0, 'max': 2601.0}, {'current': 1871.493, 'min': 800.0, 'max': 2601.0}, {'current': 800.269, 'min': 800.0, 'max': 2601.0}, {'current': 801.242, 'min': 800.0, 'max': 2601.0}, {'current': 2600.0, 'min': 800.0, 'max': 2601.0}, {'current': 1099.638, 'min': 800.0, 'max': 2601.0}, {'current': 857.72, 'min': 800.0, 'max': 2601.0}, {'current': 1090.65, 'min': 800.0, 'max': 2601.0}, {'current': 981.357, 'min': 800.0, 'max': 2601.0}, {'current': 800.873, 'min': 800.0, 'max': 2601.0}, {'current': 800.852, 'min': 800.0, 'max': 2601.0}, {'current': 800.404, 'min': 800.0, 'max': 2601.0}, {'current': 800.875, 'min': 800.0, 'max': 2601.0}, {'current': 860.41, 'min': 800.0, 'max': 2601.0}, {'current': 1048.684, 'min': 800.0, 'max': 2601.0}, {'current': 2602.483, 'min': 800.0, 'max': 2601.0}, {'current': 1508.876, 'min': 800.0, 'max': 2601.0}, {'current': 2597.762, 'min': 800.0, 'max': 2601.0}, {'current': 801.626, 'min': 800.0, 'max': 2601.0}, {'current': 800.839, 'min': 800.0, 'max': 2601.0}, {'current': 800.846, 'min': 800.0, 'max': 2601.0}, {'current': 800.29, 'min': 800.0, 'max': 2601.0}, {'current': 820.735, 'min': 800.0, 'max': 2601.0}, {'current': 801.644, 'min': 800.0, 'max': 2601.0}, {'current': 800.796, 'min': 800.0, 'max': 2601.0}, {'current': 800.167, 'min': 800.0, 'max': 2601.0}, {'current': 801.273, 'min': 800.0, 'max': 2601.0}, {'current': 800.862, 'min': 800.0, 'max': 2601.0}, {'current': 801.233, 'min': 800.0, 'max': 2601.0}, {'current': 801.285, 'min': 800.0, 'max': 2601.0}, {'current': 1212.193, 'min': 800.0, 'max': 2601.0}, {'current': 800.818, 'min': 800.0, 'max': 2601.0}, {'current': 1514.305, 'min': 800.0, 'max': 2601.0}, {'current': 2602.241, 'min': 800.0, 'max': 2601.0}, {'current': 800.861, 'min': 800.0, 'max': 2601.0}, {'current': 900.995, 'min': 800.0, 'max': 2601.0}, {'current': 801.25, 'min': 800.0, 'max': 2601.0}, {'current': 1445.125, 'min': 800.0, 'max': 2601.0}, {'current': 801.228, 'min': 800.0, 'max': 2601.0}, {'current': 800.81, 'min': 800.0, 'max': 2601.0}, {'current': 926.833, 'min': 800.0, 'max': 2601.0}, {'current': 800.398, 'min': 800.0, 'max': 2601.0}, {'current': 800.425, 'min': 800.0, 'max': 2601.0}, {'current': 800.831, 'min': 800.0, 'max': 2601.0}, {'current': 1851.081, 'min': 800.0, 'max': 2601.0}, {'current': 2101.703, 'min': 800.0, 'max': 2601.0}, {'current': 800.832, 'min': 800.0, 'max': 2601.0}, {'current': 801.227, 'min': 800.0, 'max': 2601.0}, {'current': 801.275, 'min': 800.0, 'max': 2601.0}, {'current': 844.08, 'min': 800.0, 'max': 2601.0}, {'current': 850.469, 'min': 800.0, 'max': 2601.0}, {'current': 801.209, 'min': 800.0, 'max': 2601.0}, {'current': 2602.1, 'min': 800.0, 'max': 2601.0}, {'current': 801.257, 'min': 800.0, 'max': 2601.0}, {'current': 800.443, 'min': 800.0, 'max': 2601.0}, {'current': 801.327, 'min': 800.0, 'max': 2601.0}, {'current': 800.873, 'min': 800.0, 'max': 2601.0}, {'current': 900.534, 'min': 800.0, 'max': 2601.0}, {'current': 801.337, 'min': 800.0, 'max': 2601.0}, {'current': 1302.628, 'min': 800.0, 'max': 2601.0}, {'current': 2600.0, 'min': 800.0, 'max': 2601.0}, {'current': 1506.198, 'min': 800.0, 'max': 2601.0}, {'current': 901.065, 'min': 800.0, 'max': 2601.0}, {'current': 2604.722, 'min': 800.0, 'max': 2601.0}, {'current': 1576.994, 'min': 800.0, 'max': 2601.0}, {'current': 801.312, 'min': 800.0, 'max': 2601.0}, {'current': 801.292, 'min': 800.0, 'max': 2601.0}, {'current': 800.826, 'min': 800.0, 'max': 2601.0}, {'current': 800.894, 'min': 800.0, 'max': 2601.0}, {'current': 829.352, 'min': 800.0, 'max': 2601.0}, {'current': 800.428, 'min': 800.0, 'max': 2601.0}, {'current': 1514.541, 'min': 800.0, 'max': 2601.0}, {'current': 932.937, 'min': 800.0, 'max': 2601.0}, {'current': 800.859, 'min': 800.0, 'max': 2601.0}, {'current': 825.696, 'min': 800.0, 'max': 2601.0}, {'current': 1362.349, 'min': 800.0, 'max': 2601.0}, {'current': 801.241, 'min': 800.0, 'max': 2601.0}, {'current': 800.858, 'min': 800.0, 'max': 2601.0}, {'current': 859.081, 'min': 800.0, 'max': 2601.0}, {'current': 801.253, 'min': 800.0, 'max': 2601.0}], 'disk': {'total': 1802.3645973205566, 'used': 536.9472770690918}, 'gpu': 'NVIDIA RTX A6000', 'gpu_count': 3, 'gpu_devices': [{'name': 'NVIDIA RTX A6000', 'memory_total': 51050315776}, {'name': 'NVIDIA RTX A6000', 'memory_total': 47848357888}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51050315776}], 'memory': {'total': 251.5168571472168}}
+2023-04-04 16:45:29,505 INFO    HandlerThread:104626 [system_monitor.py:probe():214] Finished collecting system info
+2023-04-04 16:45:29,505 INFO    HandlerThread:104626 [system_monitor.py:probe():217] Publishing system info
+2023-04-04 16:45:29,505 DEBUG   HandlerThread:104626 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-04-04 16:45:29,506 DEBUG   HandlerThread:104626 [system_info.py:_save_pip():67] Saving pip packages done
+2023-04-04 16:45:29,506 DEBUG   HandlerThread:104626 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-04-04 16:45:30,318 INFO    Thread-13 :104626 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/requirements.txt
+2023-04-04 16:45:30,318 INFO    Thread-13 :104626 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/conda-environment.yaml
+2023-04-04 16:45:30,319 INFO    Thread-13 :104626 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/wandb-summary.json
+2023-04-04 16:45:33,915 DEBUG   HandlerThread:104626 [system_info.py:_save_conda():86] Saving conda packages done
+2023-04-04 16:45:33,918 INFO    HandlerThread:104626 [system_monitor.py:probe():219] Finished publishing system info
+2023-04-04 16:45:33,927 DEBUG   SenderThread:104626 [sender.py:send():336] send: files
+2023-04-04 16:45:33,927 INFO    SenderThread:104626 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-04-04 16:45:33,928 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 16:45:33,942 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-04 16:45:33,942 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: stop_status
+2023-04-04 16:45:34,173 DEBUG   SenderThread:104626 [sender.py:send():336] send: telemetry
+2023-04-04 16:45:34,174 DEBUG   SenderThread:104626 [sender.py:send():336] send: config
+2023-04-04 16:45:34,316 INFO    Thread-13 :104626 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/conda-environment.yaml
+2023-04-04 16:45:34,317 INFO    Thread-13 :104626 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/wandb-metadata.json
+2023-04-04 16:45:34,317 INFO    Thread-13 :104626 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/output.log
+2023-04-04 16:45:34,610 INFO    wandb-upload_0:104626 [upload_job.py:push():138] Uploaded file /tmp/tmppg1zcp4gwandb/6xphx5mr-wandb-metadata.json
+2023-04-04 16:45:36,317 INFO    Thread-13 :104626 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/output.log
+2023-04-04 16:45:38,319 INFO    Thread-13 :104626 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/output.log
+2023-04-04 16:45:39,168 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 16:45:39,181 DEBUG   SenderThread:104626 [sender.py:send():336] send: exit
+2023-04-04 16:45:39,181 INFO    SenderThread:104626 [sender.py:send_exit():559] handling exit code: 1
+2023-04-04 16:45:39,182 INFO    SenderThread:104626 [sender.py:send_exit():561] handling runtime: 9
+2023-04-04 16:45:39,182 INFO    SenderThread:104626 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-04 16:45:39,183 INFO    SenderThread:104626 [sender.py:send_exit():567] send defer
+2023-04-04 16:45:39,183 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: defer
+2023-04-04 16:45:39,183 INFO    HandlerThread:104626 [handler.py:handle_request_defer():170] handle defer: 0
+2023-04-04 16:45:39,184 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: defer
+2023-04-04 16:45:39,184 INFO    SenderThread:104626 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-04-04 16:45:39,184 INFO    SenderThread:104626 [sender.py:transition_state():587] send defer: 1
+2023-04-04 16:45:39,185 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: defer
+2023-04-04 16:45:39,185 INFO    HandlerThread:104626 [handler.py:handle_request_defer():170] handle defer: 1
+2023-04-04 16:45:39,185 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: defer
+2023-04-04 16:45:39,185 INFO    SenderThread:104626 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-04-04 16:45:39,186 INFO    SenderThread:104626 [sender.py:transition_state():587] send defer: 2
+2023-04-04 16:45:39,186 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: defer
+2023-04-04 16:45:39,186 INFO    HandlerThread:104626 [handler.py:handle_request_defer():170] handle defer: 2
+2023-04-04 16:45:39,186 INFO    HandlerThread:104626 [system_monitor.py:finish():193] Stopping system monitor
+2023-04-04 16:45:39,187 DEBUG   SystemMonitor:104626 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2023-04-04 16:45:39,189 DEBUG   SystemMonitor:104626 [system_monitor.py:_start():168] Finished system metrics aggregation loop
+2023-04-04 16:45:39,190 DEBUG   SystemMonitor:104626 [system_monitor.py:_start():172] Publishing last batch of metrics
+2023-04-04 16:45:39,190 INFO    HandlerThread:104626 [interfaces.py:finish():199] Joined cpu monitor
+2023-04-04 16:45:39,194 INFO    HandlerThread:104626 [interfaces.py:finish():199] Joined disk monitor
+2023-04-04 16:45:39,319 INFO    Thread-13 :104626 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/wandb-summary.json
+2023-04-04 16:45:39,622 INFO    HandlerThread:104626 [interfaces.py:finish():199] Joined gpu monitor
+2023-04-04 16:45:39,623 INFO    HandlerThread:104626 [interfaces.py:finish():199] Joined memory monitor
+2023-04-04 16:45:39,625 INFO    HandlerThread:104626 [interfaces.py:finish():199] Joined network monitor
+2023-04-04 16:45:39,626 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: defer
+2023-04-04 16:45:39,626 INFO    SenderThread:104626 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-04-04 16:45:39,626 INFO    SenderThread:104626 [sender.py:transition_state():587] send defer: 3
+2023-04-04 16:45:39,627 DEBUG   SenderThread:104626 [sender.py:send():336] send: stats
+2023-04-04 16:45:39,628 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: defer
+2023-04-04 16:45:39,629 INFO    HandlerThread:104626 [handler.py:handle_request_defer():170] handle defer: 3
+2023-04-04 16:45:39,629 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: defer
+2023-04-04 16:45:39,629 INFO    SenderThread:104626 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-04-04 16:45:39,630 INFO    SenderThread:104626 [sender.py:transition_state():587] send defer: 4
+2023-04-04 16:45:39,630 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: defer
+2023-04-04 16:45:39,630 INFO    HandlerThread:104626 [handler.py:handle_request_defer():170] handle defer: 4
+2023-04-04 16:45:39,631 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: defer
+2023-04-04 16:45:39,631 INFO    SenderThread:104626 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-04-04 16:45:39,631 INFO    SenderThread:104626 [sender.py:transition_state():587] send defer: 5
+2023-04-04 16:45:39,631 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: defer
+2023-04-04 16:45:39,632 INFO    HandlerThread:104626 [handler.py:handle_request_defer():170] handle defer: 5
+2023-04-04 16:45:39,632 DEBUG   SenderThread:104626 [sender.py:send():336] send: summary
+2023-04-04 16:45:39,633 INFO    SenderThread:104626 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-04 16:45:39,634 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: defer
+2023-04-04 16:45:39,634 INFO    SenderThread:104626 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-04-04 16:45:39,634 INFO    SenderThread:104626 [sender.py:transition_state():587] send defer: 6
+2023-04-04 16:45:39,634 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: defer
+2023-04-04 16:45:39,635 INFO    HandlerThread:104626 [handler.py:handle_request_defer():170] handle defer: 6
+2023-04-04 16:45:39,635 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: defer
+2023-04-04 16:45:39,635 INFO    SenderThread:104626 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-04-04 16:45:39,641 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 16:45:39,929 INFO    SenderThread:104626 [sender.py:transition_state():587] send defer: 7
+2023-04-04 16:45:39,929 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: defer
+2023-04-04 16:45:39,929 INFO    HandlerThread:104626 [handler.py:handle_request_defer():170] handle defer: 7
+2023-04-04 16:45:39,930 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: defer
+2023-04-04 16:45:39,930 INFO    SenderThread:104626 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-04-04 16:45:40,179 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-04 16:45:40,320 INFO    Thread-13 :104626 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/config.yaml
+2023-04-04 16:45:40,320 INFO    Thread-13 :104626 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/output.log
+2023-04-04 16:45:40,321 INFO    Thread-13 :104626 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/wandb-summary.json
+2023-04-04 16:45:41,187 INFO    SenderThread:104626 [sender.py:transition_state():587] send defer: 8
+2023-04-04 16:45:41,188 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: poll_exit
+2023-04-04 16:45:41,188 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: defer
+2023-04-04 16:45:41,189 INFO    HandlerThread:104626 [handler.py:handle_request_defer():170] handle defer: 8
+2023-04-04 16:45:41,189 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: defer
+2023-04-04 16:45:41,189 INFO    SenderThread:104626 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-04-04 16:45:41,213 INFO    SenderThread:104626 [sender.py:transition_state():587] send defer: 9
+2023-04-04 16:45:41,214 DEBUG   SenderThread:104626 [sender.py:send():336] send: artifact
+2023-04-04 16:45:41,216 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: defer
+2023-04-04 16:45:41,216 INFO    HandlerThread:104626 [handler.py:handle_request_defer():170] handle defer: 9
+2023-04-04 16:45:41,320 INFO    Thread-13 :104626 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/output.log
+2023-04-04 16:45:42,424 INFO    SenderThread:104626 [sender.py:send_artifact():1428] sent artifact job-https___github.com_yoonyerin_starGAN.git_stargan.py - {'id': 'QXJ0aWZhY3Q6NDEzMTc3MDAy', 'digest': 'd1cca7b04f6e7845460136ef6c76f5f6', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_yoonyerin_starGAN.git_stargan.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_yoonyerin_starGAN.git_stargan.py', 'alias': 'v3'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMjQ5NjI0', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEzMTc3MDAy', 'versionIndex': 3}}, 'version': 'v3'}
+2023-04-04 16:45:42,424 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: defer
+2023-04-04 16:45:42,424 INFO    SenderThread:104626 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-04-04 16:45:42,425 INFO    SenderThread:104626 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-04-04 16:45:43,322 INFO    SenderThread:104626 [dir_watcher.py:finish():395] scan: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files
+2023-04-04 16:45:43,322 INFO    SenderThread:104626 [dir_watcher.py:finish():409] scan save: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/wandb-summary.json wandb-summary.json
+2023-04-04 16:45:43,323 INFO    SenderThread:104626 [dir_watcher.py:finish():409] scan save: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/config.yaml config.yaml
+2023-04-04 16:45:43,323 INFO    SenderThread:104626 [dir_watcher.py:finish():409] scan save: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/requirements.txt requirements.txt
+2023-04-04 16:45:43,323 INFO    SenderThread:104626 [dir_watcher.py:finish():409] scan save: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/output.log output.log
+2023-04-04 16:45:43,323 INFO    SenderThread:104626 [dir_watcher.py:finish():409] scan save: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/conda-environment.yaml conda-environment.yaml
+2023-04-04 16:45:43,324 INFO    SenderThread:104626 [dir_watcher.py:finish():409] scan save: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/wandb-metadata.json wandb-metadata.json
+2023-04-04 16:45:43,324 INFO    SenderThread:104626 [sender.py:transition_state():587] send defer: 10
+2023-04-04 16:45:43,324 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: defer
+2023-04-04 16:45:43,324 INFO    HandlerThread:104626 [handler.py:handle_request_defer():170] handle defer: 10
+2023-04-04 16:45:43,356 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: defer
+2023-04-04 16:45:43,356 INFO    SenderThread:104626 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-04-04 16:45:43,356 INFO    SenderThread:104626 [file_pusher.py:finish():164] shutting down file pusher
+2023-04-04 16:45:43,982 INFO    wandb-upload_4:104626 [upload_job.py:push():138] Uploaded file /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/conda-environment.yaml
+2023-04-04 16:45:44,014 INFO    wandb-upload_3:104626 [upload_job.py:push():138] Uploaded file /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/output.log
+2023-04-04 16:45:44,018 INFO    wandb-upload_0:104626 [upload_job.py:push():138] Uploaded file /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/requirements.txt
+2023-04-04 16:45:44,020 INFO    wandb-upload_1:104626 [upload_job.py:push():138] Uploaded file /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/wandb-summary.json
+2023-04-04 16:45:44,093 INFO    wandb-upload_2:104626 [upload_job.py:push():138] Uploaded file /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/files/config.yaml
+2023-04-04 16:45:44,294 INFO    Thread-12 (_thread_body):104626 [sender.py:transition_state():587] send defer: 11
+2023-04-04 16:45:44,294 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: defer
+2023-04-04 16:45:44,294 INFO    HandlerThread:104626 [handler.py:handle_request_defer():170] handle defer: 11
+2023-04-04 16:45:44,295 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: defer
+2023-04-04 16:45:44,295 INFO    SenderThread:104626 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-04-04 16:45:44,295 INFO    SenderThread:104626 [file_pusher.py:join():169] waiting for file pusher
+2023-04-04 16:45:44,296 INFO    SenderThread:104626 [sender.py:transition_state():587] send defer: 12
+2023-04-04 16:45:44,296 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: defer
+2023-04-04 16:45:44,296 INFO    HandlerThread:104626 [handler.py:handle_request_defer():170] handle defer: 12
+2023-04-04 16:45:44,297 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: defer
+2023-04-04 16:45:44,297 INFO    SenderThread:104626 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-04-04 16:45:44,510 INFO    SenderThread:104626 [sender.py:transition_state():587] send defer: 13
+2023-04-04 16:45:44,511 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: defer
+2023-04-04 16:45:44,511 INFO    HandlerThread:104626 [handler.py:handle_request_defer():170] handle defer: 13
+2023-04-04 16:45:44,512 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: defer
+2023-04-04 16:45:44,512 INFO    SenderThread:104626 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-04-04 16:45:44,512 INFO    SenderThread:104626 [sender.py:transition_state():587] send defer: 14
+2023-04-04 16:45:44,513 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: defer
+2023-04-04 16:45:44,513 INFO    HandlerThread:104626 [handler.py:handle_request_defer():170] handle defer: 14
+2023-04-04 16:45:44,514 DEBUG   SenderThread:104626 [sender.py:send():336] send: final
+2023-04-04 16:45:44,514 DEBUG   SenderThread:104626 [sender.py:send():336] send: footer
+2023-04-04 16:45:44,514 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: defer
+2023-04-04 16:45:44,514 INFO    SenderThread:104626 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-04-04 16:45:44,515 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-04 16:45:44,517 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: poll_exit
+2023-04-04 16:45:44,517 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: server_info
+2023-04-04 16:45:44,519 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: get_summary
+2023-04-04 16:45:44,519 DEBUG   SenderThread:104626 [sender.py:send_request():363] send_request: server_info
+2023-04-04 16:45:44,523 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: sampled_history
+2023-04-04 16:45:44,747 INFO    MainThread:104626 [wandb_run.py:_footer_history_summary_info():3429] rendering history
+2023-04-04 16:45:44,747 INFO    MainThread:104626 [wandb_run.py:_footer_history_summary_info():3461] rendering summary
+2023-04-04 16:45:44,747 INFO    MainThread:104626 [wandb_run.py:_footer_sync_info():3387] logging synced files
+2023-04-04 16:45:44,748 DEBUG   HandlerThread:104626 [handler.py:handle_request():144] handle_request: shutdown
+2023-04-04 16:45:44,748 INFO    HandlerThread:104626 [handler.py:finish():842] shutting down handler
+2023-04-04 16:45:45,518 INFO    WriterThread:104626 [datastore.py:close():298] close: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230404_164528-3ofe954c/run-3ofe954c.wandb
+2023-04-04 16:45:45,747 INFO    SenderThread:104626 [sender.py:finish():1504] shutting down sender
+2023-04-04 16:45:45,747 INFO    SenderThread:104626 [file_pusher.py:finish():164] shutting down file pusher
+2023-04-04 16:45:45,747 INFO    SenderThread:104626 [file_pusher.py:join():169] waiting for file pusher

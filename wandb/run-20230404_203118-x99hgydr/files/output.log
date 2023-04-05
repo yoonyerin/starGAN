@@ -1,0 +1,26 @@
+
+selected: ['Narrow_Eyes', 'Straight_Hair', 'Pale_Skin', 'Receding_Hairline', 'Bald', 'Oval_Face', 'Double_Chin', 'Bushy_Eyebrows', '5_o_Clock_Shadow', 'Wavy_Hair', 'Wearing_Earrings', 'No_Beard', 'Arched_Eyebrows', 'Attractive', 'Male', 'Heavy_Makeup']
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 278, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 72, in main
+    celeba_loader=get_loader(config, config.celeba_image_dir, config.attr_path,
+  File "/home/yerinyoon/code/anonymousNet/data/celeba/data_extract.py", line 165, in get_loader
+    dataset = CelebA(image_dir, attr_path, all_attrs, transform, config)
+  File "/home/yerinyoon/code/anonymousNet/data/celeba/data_extract.py", line 52, in __init__
+    self.preprocess()
+  File "/home/yerinyoon/code/anonymousNet/data/celeba/data_extract.py", line 65, in preprocess
+    self.group_df.drop(["hair_color"],axis=1, inplace=True)
+  File "/home/yerinyoon/.local/lib/python3.10/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/yerinyoon/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 5399, in drop
+    return super().drop(
+  File "/home/yerinyoon/.local/lib/python3.10/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/yerinyoon/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 4505, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/home/yerinyoon/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 4546, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/home/yerinyoon/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6934, in drop
+    raise KeyError(f"{list(labels[mask])} not found in axis")
+KeyError: "['hair_color'] not found in axis"

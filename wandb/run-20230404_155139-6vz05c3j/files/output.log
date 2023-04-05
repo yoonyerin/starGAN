@@ -1,0 +1,15 @@
+
+selected: ['Narrow_Eyes', 'Straight_Hair', 'Pale_Skin', 'Receding_Hairline', 'Bald', 'Oval_Face', 'Double_Chin', 'Bushy_Eyebrows', '5_o_Clock_Shadow', 'Wavy_Hair', 'Wearing_Earrings', 'No_Beard', 'Arched_Eyebrows', 'Attractive', 'Male', 'Heavy_Makeup']
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 278, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 88, in main
+    solver = Solver(celeba_loader, rafd_loader,  config, wandb)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 169, in __init__
+    torch.cuda.set_device(config.gpu_id)
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/cuda/__init__.py", line 326, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+Finished preprocessing the CelebA dataset...
+torch.cuda.is_available(): True
+gpu_id: 2

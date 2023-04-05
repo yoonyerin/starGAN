@@ -1,0 +1,620 @@
+2023-04-05 11:14:18,748 INFO    StreamThr :28169 [internal.py:wandb_internal():87] W&B internal server running at pid: 28169, started at: 2023-04-05 11:14:18.747910
+2023-04-05 11:14:18,750 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status
+2023-04-05 11:14:18,752 INFO    WriterThread:28169 [datastore.py:open_for_write():85] open: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/run-pghnnazi.wandb
+2023-04-05 11:14:18,756 DEBUG   SenderThread:28169 [sender.py:send():336] send: header
+2023-04-05 11:14:18,757 DEBUG   SenderThread:28169 [sender.py:send():336] send: run
+2023-04-05 11:14:19,301 INFO    SenderThread:28169 [dir_watcher.py:__init__():219] watching files in: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files
+2023-04-05 11:14:19,301 INFO    SenderThread:28169 [sender.py:_start_run_threads():1078] run started: pghnnazi with start time 1680660858.743694
+2023-04-05 11:14:19,301 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:14:19,301 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:14:19,306 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: check_version
+2023-04-05 11:14:19,307 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: check_version
+2023-04-05 11:14:19,367 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: run_start
+2023-04-05 11:14:19,374 DEBUG   HandlerThread:28169 [system_info.py:__init__():31] System info init
+2023-04-05 11:14:19,374 DEBUG   HandlerThread:28169 [system_info.py:__init__():46] System info init done
+2023-04-05 11:14:19,374 INFO    HandlerThread:28169 [system_monitor.py:start():183] Starting system monitor
+2023-04-05 11:14:19,374 INFO    SystemMonitor:28169 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-04-05 11:14:19,375 INFO    HandlerThread:28169 [system_monitor.py:probe():204] Collecting system info
+2023-04-05 11:14:19,377 INFO    SystemMonitor:28169 [interfaces.py:start():187] Started cpu monitoring
+2023-04-05 11:14:19,378 INFO    SystemMonitor:28169 [interfaces.py:start():187] Started disk monitoring
+2023-04-05 11:14:19,380 INFO    SystemMonitor:28169 [interfaces.py:start():187] Started gpu monitoring
+2023-04-05 11:14:19,384 INFO    SystemMonitor:28169 [interfaces.py:start():187] Started memory monitoring
+2023-04-05 11:14:19,385 INFO    SystemMonitor:28169 [interfaces.py:start():187] Started network monitoring
+2023-04-05 11:14:19,442 DEBUG   HandlerThread:28169 [system_info.py:probe():195] Probing system
+2023-04-05 11:14:19,444 DEBUG   HandlerThread:28169 [system_info.py:_probe_git():180] Probing git
+2023-04-05 11:14:19,450 DEBUG   HandlerThread:28169 [system_info.py:_probe_git():188] Probing git done
+2023-04-05 11:14:19,450 DEBUG   HandlerThread:28169 [system_info.py:probe():240] Probing system done
+2023-04-05 11:14:19,450 DEBUG   HandlerThread:28169 [system_monitor.py:probe():213] {'os': 'Linux-4.15.0-112-generic-x86_64-with-glibc2.27', 'python': '3.10.9', 'heartbeatAt': '2023-04-05T02:14:19.442992', 'startedAt': '2023-04-05T02:14:18.733535', 'docker': None, 'cuda': None, 'args': ('--mode', 'train '), 'state': 'running', 'program': '/home/yerinyoon/code/anonymousNet/starGAN/stargan.py', 'codePath': 'stargan.py', 'git': {'remote': 'https://github.com/yoonyerin/starGAN.git', 'commit': 'b4306af6dc1768aee0aff000851fd29a52e619c8'}, 'email': 'yerinyoon@ewhain.net', 'root': '/home/yerinyoon/code/anonymousNet/starGAN', 'host': 'ubuntu', 'username': 'yerinyoon', 'executable': '/home/yerinyoon/anaconda3/envs/pytorch/bin/python', 'cpu_count': 56, 'cpu_count_logical': 112, 'cpu_freq': {'current': 1055.3512499999993, 'min': 800.0, 'max': 2601.0}, 'cpu_freq_per_core': [{'current': 899.36, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 798.873, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 801.088, 'min': 800.0, 'max': 2601.0}, {'current': 1323.55, 'min': 800.0, 'max': 2601.0}, {'current': 798.791, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.824, 'min': 800.0, 'max': 2601.0}, {'current': 2377.79, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 801.134, 'min': 800.0, 'max': 2601.0}, {'current': 2240.157, 'min': 800.0, 'max': 2601.0}, {'current': 973.556, 'min': 800.0, 'max': 2601.0}, {'current': 801.133, 'min': 800.0, 'max': 2601.0}, {'current': 800.081, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 1031.112, 'min': 800.0, 'max': 2601.0}, {'current': 801.141, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 798.828, 'min': 800.0, 'max': 2601.0}, {'current': 1773.373, 'min': 800.0, 'max': 2601.0}, {'current': 3400.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 798.961, 'min': 800.0, 'max': 2601.0}, {'current': 798.963, 'min': 800.0, 'max': 2601.0}, {'current': 801.044, 'min': 800.0, 'max': 2601.0}, {'current': 1197.916, 'min': 800.0, 'max': 2601.0}, {'current': 838.083, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.129, 'min': 800.0, 'max': 2601.0}, {'current': 799.935, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 855.084, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 801.061, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 801.07, 'min': 800.0, 'max': 2601.0}, {'current': 801.019, 'min': 800.0, 'max': 2601.0}, {'current': 801.796, 'min': 800.0, 'max': 2601.0}, {'current': 1280.641, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.664, 'min': 800.0, 'max': 2601.0}, {'current': 810.971, 'min': 800.0, 'max': 2601.0}, {'current': 814.336, 'min': 800.0, 'max': 2601.0}, {'current': 802.566, 'min': 800.0, 'max': 2601.0}, {'current': 802.599, 'min': 800.0, 'max': 2601.0}, {'current': 2600.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.586, 'min': 800.0, 'max': 2601.0}, {'current': 3400.0, 'min': 800.0, 'max': 2601.0}, {'current': 801.277, 'min': 800.0, 'max': 2601.0}, {'current': 821.367, 'min': 800.0, 'max': 2601.0}, {'current': 898.992, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 799.186, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 799.192, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 1294.136, 'min': 800.0, 'max': 2601.0}, {'current': 801.015, 'min': 800.0, 'max': 2601.0}, {'current': 799.188, 'min': 800.0, 'max': 2601.0}, {'current': 1608.429, 'min': 800.0, 'max': 2601.0}, {'current': 1298.071, 'min': 800.0, 'max': 2601.0}, {'current': 800.824, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 799.197, 'min': 800.0, 'max': 2601.0}, {'current': 1349.779, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 1145.901, 'min': 800.0, 'max': 2601.0}, {'current': 3400.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.809, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 1100.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 1002.13, 'min': 800.0, 'max': 2601.0}, {'current': 803.618, 'min': 800.0, 'max': 2601.0}, {'current': 798.98, 'min': 800.0, 'max': 2601.0}, {'current': 798.98, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 839.898, 'min': 800.0, 'max': 2601.0}, {'current': 900.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 975.919, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 799.21, 'min': 800.0, 'max': 2601.0}, {'current': 801.943, 'min': 800.0, 'max': 2601.0}, {'current': 1290.425, 'min': 800.0, 'max': 2601.0}, {'current': 800.0, 'min': 800.0, 'max': 2601.0}, {'current': 801.343, 'min': 800.0, 'max': 2601.0}, {'current': 800.509, 'min': 800.0, 'max': 2601.0}, {'current': 801.089, 'min': 800.0, 'max': 2601.0}, {'current': 801.685, 'min': 800.0, 'max': 2601.0}, {'current': 799.958, 'min': 800.0, 'max': 2601.0}, {'current': 964.153, 'min': 800.0, 'max': 2601.0}, {'current': 799.954, 'min': 800.0, 'max': 2601.0}, {'current': 3406.296, 'min': 800.0, 'max': 2601.0}, {'current': 801.014, 'min': 800.0, 'max': 2601.0}], 'disk': {'total': 1802.3645973205566, 'used': 538.2101516723633}, 'gpu': 'NVIDIA RTX A6000', 'gpu_count': 3, 'gpu_devices': [{'name': 'NVIDIA RTX A6000', 'memory_total': 51050315776}, {'name': 'NVIDIA RTX A6000', 'memory_total': 47848357888}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51050315776}], 'memory': {'total': 251.5168571472168}}
+2023-04-05 11:14:19,450 INFO    HandlerThread:28169 [system_monitor.py:probe():214] Finished collecting system info
+2023-04-05 11:14:19,450 INFO    HandlerThread:28169 [system_monitor.py:probe():217] Publishing system info
+2023-04-05 11:14:19,450 DEBUG   HandlerThread:28169 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-04-05 11:14:19,450 DEBUG   HandlerThread:28169 [system_info.py:_save_pip():67] Saving pip packages done
+2023-04-05 11:14:19,450 DEBUG   HandlerThread:28169 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-04-05 11:14:20,305 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/requirements.txt
+2023-04-05 11:14:20,306 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/conda-environment.yaml
+2023-04-05 11:14:20,306 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:14:24,157 DEBUG   HandlerThread:28169 [system_info.py:_save_conda():86] Saving conda packages done
+2023-04-05 11:14:24,159 INFO    HandlerThread:28169 [system_monitor.py:probe():219] Finished publishing system info
+2023-04-05 11:14:24,169 DEBUG   SenderThread:28169 [sender.py:send():336] send: files
+2023-04-05 11:14:24,169 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-04-05 11:14:24,170 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:14:24,178 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-05 11:14:24,179 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: stop_status
+2023-04-05 11:14:24,304 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/conda-environment.yaml
+2023-04-05 11:14:24,305 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-metadata.json
+2023-04-05 11:14:24,395 DEBUG   SenderThread:28169 [sender.py:send():336] send: telemetry
+2023-04-05 11:14:24,395 DEBUG   SenderThread:28169 [sender.py:send():336] send: config
+2023-04-05 11:14:24,826 INFO    wandb-upload_0:28169 [upload_job.py:push():138] Uploaded file /tmp/tmph2kl5zbpwandb/8xw9c0qg-wandb-metadata.json
+2023-04-05 11:14:26,305 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:28,306 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:29,186 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:14:29,220 DEBUG   SenderThread:28169 [sender.py:send():336] send: telemetry
+2023-04-05 11:14:30,307 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:31,307 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:33,308 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:33,921 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:14:34,235 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:14:34,447 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:14:34,450 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:14:34,451 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:14:34,451 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:14:34,966 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:14:34,968 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:14:34,969 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:14:34,970 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:14:35,309 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:35,309 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:14:35,486 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:14:35,488 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:14:35,488 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:14:35,489 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:14:36,030 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:14:36,032 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:14:36,033 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:14:36,033 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:14:36,309 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:36,310 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:14:36,631 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:14:36,633 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:14:36,633 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:14:36,634 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:14:37,214 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:14:37,216 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:14:37,217 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:14:37,217 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:14:37,310 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:37,310 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:14:37,835 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:14:37,838 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:14:37,839 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:14:37,840 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:14:38,311 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:38,311 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:14:38,363 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:14:38,365 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:14:38,366 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:14:38,366 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:14:38,984 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:14:38,988 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:14:38,988 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:14:38,989 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:14:39,178 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:14:39,311 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:39,312 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:14:39,367 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:14:39,734 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:14:39,736 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:14:39,737 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:14:39,737 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:14:40,312 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:40,312 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:14:40,808 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:14:40,810 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:14:40,811 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:14:40,811 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:14:41,315 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:41,316 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:14:42,316 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:42,383 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:14:42,384 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:14:42,385 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:14:42,386 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:14:43,316 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:43,317 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:14:44,087 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:14:44,090 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:14:44,090 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:14:44,091 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:14:44,180 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:14:44,317 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:14:44,470 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:14:45,317 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:46,318 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:46,812 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:14:46,814 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:14:46,815 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:14:46,816 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:14:47,319 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:47,319 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:14:49,181 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:14:49,320 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:49,513 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:14:49,747 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:14:49,782 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:14:49,783 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:14:49,783 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:14:50,320 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/config.yaml
+2023-04-05 11:14:50,321 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:14:51,321 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:52,321 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:52,753 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:14:52,755 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:14:52,762 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:14:52,763 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:14:53,322 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:53,322 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:14:54,182 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:14:55,323 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:55,486 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:14:55,739 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:14:55,741 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:14:55,742 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:14:55,742 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:14:56,323 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:14:57,326 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:58,326 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:58,753 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:14:58,755 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:14:58,755 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:14:58,756 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:14:59,183 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:14:59,333 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:14:59,334 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:15:01,464 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:15:01,723 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:15:01,726 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:15:01,727 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:15:01,727 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:15:02,332 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:02,333 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:15:04,184 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:15:04,333 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:04,713 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:15:04,715 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:15:04,716 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:15:04,717 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:15:05,334 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:15:06,335 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:06,487 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:15:07,720 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:15:07,722 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:15:07,723 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:15:07,724 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:15:08,336 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:08,336 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:15:09,185 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:15:10,336 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:10,717 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:15:10,720 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:15:10,720 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:15:10,721 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:15:11,337 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:15:11,603 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:15:12,338 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:13,746 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:15:13,748 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:15:13,749 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:15:13,750 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:15:14,186 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:15:14,338 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:14,339 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:15:16,339 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:16,765 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:15:16,768 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:15:16,768 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:15:16,769 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:15:16,770 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:15:17,340 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:15:18,341 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:19,187 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:15:19,385 DEBUG   SystemMonitor:28169 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2023-04-05 11:15:19,390 DEBUG   SenderThread:28169 [sender.py:send():336] send: stats
+2023-04-05 11:15:19,761 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:15:19,762 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:15:19,763 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:15:19,764 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:15:20,342 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:20,342 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:15:22,343 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:22,521 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:15:22,792 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:15:22,794 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:15:22,795 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:15:22,796 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:15:23,343 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:15:24,188 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:15:24,344 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:25,806 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:15:25,808 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:15:25,808 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:15:25,809 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:15:26,344 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:26,345 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:15:27,572 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:15:28,346 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:28,846 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:15:28,848 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:15:28,849 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:15:28,849 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:15:29,189 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:15:29,346 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:15:30,346 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:31,848 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:15:31,851 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:15:31,852 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:15:31,853 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:15:32,349 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:32,350 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:15:32,739 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:15:34,190 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:15:34,350 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:34,866 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:15:34,868 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:15:34,868 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:15:34,869 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:15:35,351 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:15:36,351 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:37,912 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:15:37,915 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:15:37,915 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:15:37,916 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:15:37,917 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:15:38,352 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:38,353 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:15:39,191 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:15:40,353 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:40,932 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:15:40,934 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:15:40,934 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:15:40,935 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:15:41,354 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:15:42,354 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:43,682 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:15:43,961 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:15:43,963 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:15:43,964 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:15:43,964 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:15:44,192 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:15:44,355 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:44,356 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:15:46,356 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:46,972 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:15:46,974 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:15:46,975 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:15:46,976 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:15:47,357 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:15:48,357 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:48,754 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:15:49,193 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:15:49,394 DEBUG   SenderThread:28169 [sender.py:send():336] send: stats
+2023-04-05 11:15:49,994 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:15:49,996 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:15:49,996 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:15:49,997 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:15:50,358 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:50,359 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:15:52,359 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:53,038 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:15:53,042 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:15:53,042 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:15:53,044 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:15:53,360 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:15:53,907 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:15:54,194 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:15:54,361 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:56,104 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:15:56,107 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:15:56,107 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:15:56,108 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:15:56,362 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:56,362 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:15:58,363 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:15:59,055 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:15:59,057 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:15:59,058 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:15:59,058 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:15:59,059 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:15:59,195 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:15:59,363 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:16:00,363 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:02,088 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:16:02,090 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:16:02,091 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:16:02,091 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:16:02,364 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:02,365 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:16:04,196 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:16:04,365 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:04,861 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:16:05,106 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:16:05,108 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:16:05,109 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:16:05,109 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:16:05,366 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:16:06,366 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:08,156 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:16:08,158 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:16:08,158 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:16:08,159 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:16:08,367 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:08,368 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:16:09,197 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:16:09,890 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:16:10,368 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:11,166 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:16:11,168 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:16:11,169 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:16:11,169 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:16:11,368 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:16:12,369 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:14,198 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:16:14,211 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:16:14,214 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:16:14,215 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:16:14,215 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:16:14,370 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:14,370 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:16:15,063 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:16:16,370 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:17,207 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:16:17,209 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:16:17,209 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:16:17,210 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:16:17,371 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:16:18,372 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:19,199 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:16:19,397 DEBUG   SenderThread:28169 [sender.py:send():336] send: stats
+2023-04-05 11:16:20,238 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:16:20,240 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:16:20,241 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:16:20,242 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:16:20,243 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:16:20,373 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:20,373 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:16:22,374 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:23,244 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:16:23,247 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:16:23,247 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:16:23,248 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:16:23,374 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:16:24,200 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:16:24,375 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:26,011 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:16:26,280 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:16:26,283 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:16:26,283 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:16:26,284 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:16:26,376 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:26,376 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:16:28,377 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:29,201 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:16:29,309 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:16:29,311 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:16:29,312 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:16:29,312 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:16:29,377 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:16:30,378 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:31,066 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:16:32,345 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:16:32,347 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:16:32,348 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:16:32,349 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:16:32,379 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:32,379 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:16:34,202 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:16:34,380 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:35,380 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:16:35,383 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:16:35,384 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:16:35,384 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:16:36,259 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:16:36,383 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:36,384 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:16:38,385 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:38,400 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:16:38,402 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:16:38,403 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:16:38,403 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:16:39,203 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:16:39,385 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:16:40,386 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:41,439 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:16:41,455 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:16:41,456 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:16:41,456 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:16:41,457 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:16:42,387 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:42,387 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:16:44,204 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:16:44,388 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:44,447 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:16:44,450 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:16:44,450 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:16:44,451 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:16:45,388 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:16:46,389 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:47,212 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:16:47,470 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:16:47,472 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:16:47,472 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:16:47,472 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:16:48,390 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:48,390 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:16:49,205 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:16:49,401 DEBUG   SenderThread:28169 [sender.py:send():336] send: stats
+2023-04-05 11:16:50,391 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:50,492 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:16:50,494 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:16:50,494 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:16:50,495 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:16:51,391 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:16:52,265 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:16:52,392 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:53,563 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:16:53,565 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:16:53,566 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:16:53,567 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:16:54,206 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:16:54,393 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:54,393 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:16:56,394 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:56,580 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:16:56,582 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:16:56,583 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:16:56,584 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:16:57,394 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:16:57,451 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:16:58,395 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:16:59,207 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-05 11:16:59,618 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-05 11:16:59,620 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:16:59,621 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:16:59,622 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:17:00,396 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:17:00,396 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:17:01,351 DEBUG   SenderThread:28169 [sender.py:send():336] send: exit
+2023-04-05 11:17:01,351 INFO    SenderThread:28169 [sender.py:send_exit():559] handling exit code: 255
+2023-04-05 11:17:01,352 INFO    SenderThread:28169 [sender.py:send_exit():561] handling runtime: 161
+2023-04-05 11:17:01,352 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:17:01,353 INFO    SenderThread:28169 [sender.py:send_exit():567] send defer
+2023-04-05 11:17:01,353 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: defer
+2023-04-05 11:17:01,353 INFO    HandlerThread:28169 [handler.py:handle_request_defer():170] handle defer: 0
+2023-04-05 11:17:01,354 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: defer
+2023-04-05 11:17:01,354 INFO    SenderThread:28169 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-04-05 11:17:01,354 INFO    SenderThread:28169 [sender.py:transition_state():587] send defer: 1
+2023-04-05 11:17:01,354 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: defer
+2023-04-05 11:17:01,354 INFO    HandlerThread:28169 [handler.py:handle_request_defer():170] handle defer: 1
+2023-04-05 11:17:01,355 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: defer
+2023-04-05 11:17:01,355 INFO    SenderThread:28169 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-04-05 11:17:01,355 INFO    SenderThread:28169 [sender.py:transition_state():587] send defer: 2
+2023-04-05 11:17:01,355 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: defer
+2023-04-05 11:17:01,355 INFO    HandlerThread:28169 [handler.py:handle_request_defer():170] handle defer: 2
+2023-04-05 11:17:01,355 INFO    HandlerThread:28169 [system_monitor.py:finish():193] Stopping system monitor
+2023-04-05 11:17:01,356 DEBUG   SystemMonitor:28169 [system_monitor.py:_start():168] Finished system metrics aggregation loop
+2023-04-05 11:17:01,356 DEBUG   SystemMonitor:28169 [system_monitor.py:_start():172] Publishing last batch of metrics
+2023-04-05 11:17:01,360 INFO    HandlerThread:28169 [interfaces.py:finish():199] Joined cpu monitor
+2023-04-05 11:17:01,361 INFO    HandlerThread:28169 [interfaces.py:finish():199] Joined disk monitor
+2023-04-05 11:17:01,397 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:17:01,694 INFO    HandlerThread:28169 [interfaces.py:finish():199] Joined gpu monitor
+2023-04-05 11:17:01,695 INFO    HandlerThread:28169 [interfaces.py:finish():199] Joined memory monitor
+2023-04-05 11:17:01,695 INFO    HandlerThread:28169 [interfaces.py:finish():199] Joined network monitor
+2023-04-05 11:17:01,696 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: defer
+2023-04-05 11:17:01,696 INFO    SenderThread:28169 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-04-05 11:17:01,697 INFO    SenderThread:28169 [sender.py:transition_state():587] send defer: 3
+2023-04-05 11:17:01,697 DEBUG   SenderThread:28169 [sender.py:send():336] send: stats
+2023-04-05 11:17:01,697 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: defer
+2023-04-05 11:17:01,699 INFO    HandlerThread:28169 [handler.py:handle_request_defer():170] handle defer: 3
+2023-04-05 11:17:01,700 DEBUG   SenderThread:28169 [sender.py:send():336] send: history
+2023-04-05 11:17:01,701 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: summary_record
+2023-04-05 11:17:01,701 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:17:01,702 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: defer
+2023-04-05 11:17:01,702 INFO    SenderThread:28169 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-04-05 11:17:01,702 INFO    SenderThread:28169 [sender.py:transition_state():587] send defer: 4
+2023-04-05 11:17:01,702 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: defer
+2023-04-05 11:17:01,702 INFO    HandlerThread:28169 [handler.py:handle_request_defer():170] handle defer: 4
+2023-04-05 11:17:01,703 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: defer
+2023-04-05 11:17:01,703 INFO    SenderThread:28169 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-04-05 11:17:01,703 INFO    SenderThread:28169 [sender.py:transition_state():587] send defer: 5
+2023-04-05 11:17:01,703 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: defer
+2023-04-05 11:17:01,703 INFO    HandlerThread:28169 [handler.py:handle_request_defer():170] handle defer: 5
+2023-04-05 11:17:01,704 DEBUG   SenderThread:28169 [sender.py:send():336] send: summary
+2023-04-05 11:17:01,704 INFO    SenderThread:28169 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-05 11:17:01,705 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: defer
+2023-04-05 11:17:01,705 INFO    SenderThread:28169 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-04-05 11:17:01,705 INFO    SenderThread:28169 [sender.py:transition_state():587] send defer: 6
+2023-04-05 11:17:01,705 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: defer
+2023-04-05 11:17:01,705 INFO    HandlerThread:28169 [handler.py:handle_request_defer():170] handle defer: 6
+2023-04-05 11:17:01,705 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: defer
+2023-04-05 11:17:01,706 INFO    SenderThread:28169 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-04-05 11:17:01,706 INFO    SenderThread:28169 [sender.py:transition_state():587] send defer: 7
+2023-04-05 11:17:01,706 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: status_report
+2023-04-05 11:17:01,706 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: defer
+2023-04-05 11:17:01,706 INFO    HandlerThread:28169 [handler.py:handle_request_defer():170] handle defer: 7
+2023-04-05 11:17:01,707 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: defer
+2023-04-05 11:17:01,707 INFO    SenderThread:28169 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-04-05 11:17:02,352 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-05 11:17:02,397 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:17:02,397 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:17:03,744 INFO    SenderThread:28169 [sender.py:transition_state():587] send defer: 8
+2023-04-05 11:17:03,744 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: poll_exit
+2023-04-05 11:17:03,745 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: defer
+2023-04-05 11:17:03,745 INFO    HandlerThread:28169 [handler.py:handle_request_defer():170] handle defer: 8
+2023-04-05 11:17:03,746 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: defer
+2023-04-05 11:17:03,746 INFO    SenderThread:28169 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-04-05 11:17:03,763 INFO    SenderThread:28169 [sender.py:transition_state():587] send defer: 9
+2023-04-05 11:17:03,763 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: defer
+2023-04-05 11:17:03,763 INFO    HandlerThread:28169 [handler.py:handle_request_defer():170] handle defer: 9
+2023-04-05 11:17:03,764 DEBUG   SenderThread:28169 [sender.py:send():336] send: artifact
+2023-04-05 11:17:04,398 INFO    Thread-13 :28169 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:17:04,931 INFO    SenderThread:28169 [sender.py:send_artifact():1428] sent artifact job-https___github.com_yoonyerin_starGAN.git_stargan.py - {'id': 'QXJ0aWZhY3Q6NDEzODM5MjE5', 'digest': '94b837ca2696de449212eb84ab8ce91e', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_yoonyerin_starGAN.git_stargan.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_yoonyerin_starGAN.git_stargan.py', 'alias': 'v5'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwMjQ5NjI0', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEzODgzNTA5', 'versionIndex': 7}}, 'version': 'v5'}
+2023-04-05 11:17:04,931 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: defer
+2023-04-05 11:17:04,931 INFO    SenderThread:28169 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-04-05 11:17:04,931 INFO    SenderThread:28169 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-04-05 11:17:05,399 INFO    SenderThread:28169 [dir_watcher.py:finish():395] scan: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files
+2023-04-05 11:17:05,399 INFO    SenderThread:28169 [dir_watcher.py:finish():409] scan save: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json wandb-summary.json
+2023-04-05 11:17:05,400 INFO    SenderThread:28169 [dir_watcher.py:finish():409] scan save: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/config.yaml config.yaml
+2023-04-05 11:17:05,405 INFO    SenderThread:28169 [dir_watcher.py:finish():409] scan save: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/requirements.txt requirements.txt
+2023-04-05 11:17:05,412 INFO    SenderThread:28169 [dir_watcher.py:finish():409] scan save: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log output.log
+2023-04-05 11:17:05,413 INFO    SenderThread:28169 [dir_watcher.py:finish():409] scan save: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/conda-environment.yaml conda-environment.yaml
+2023-04-05 11:17:05,415 INFO    SenderThread:28169 [dir_watcher.py:finish():409] scan save: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-metadata.json wandb-metadata.json
+2023-04-05 11:17:05,416 INFO    SenderThread:28169 [sender.py:transition_state():587] send defer: 10
+2023-04-05 11:17:05,425 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: defer
+2023-04-05 11:17:05,426 INFO    HandlerThread:28169 [handler.py:handle_request_defer():170] handle defer: 10
+2023-04-05 11:17:05,426 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: defer
+2023-04-05 11:17:05,427 INFO    SenderThread:28169 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-04-05 11:17:05,427 INFO    SenderThread:28169 [file_pusher.py:finish():164] shutting down file pusher
+2023-04-05 11:17:05,995 INFO    wandb-upload_0:28169 [upload_job.py:push():138] Uploaded file /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/wandb-summary.json
+2023-04-05 11:17:06,031 INFO    wandb-upload_2:28169 [upload_job.py:push():138] Uploaded file /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/requirements.txt
+2023-04-05 11:17:06,039 INFO    wandb-upload_3:28169 [upload_job.py:push():138] Uploaded file /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/output.log
+2023-04-05 11:17:06,061 INFO    wandb-upload_4:28169 [upload_job.py:push():138] Uploaded file /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/conda-environment.yaml
+2023-04-05 11:17:06,075 INFO    wandb-upload_1:28169 [upload_job.py:push():138] Uploaded file /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/files/config.yaml
+2023-04-05 11:17:06,275 INFO    Thread-12 (_thread_body):28169 [sender.py:transition_state():587] send defer: 11
+2023-04-05 11:17:06,276 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: defer
+2023-04-05 11:17:06,276 INFO    HandlerThread:28169 [handler.py:handle_request_defer():170] handle defer: 11
+2023-04-05 11:17:06,277 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: defer
+2023-04-05 11:17:06,277 INFO    SenderThread:28169 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-04-05 11:17:06,277 INFO    SenderThread:28169 [file_pusher.py:join():169] waiting for file pusher
+2023-04-05 11:17:06,277 INFO    SenderThread:28169 [sender.py:transition_state():587] send defer: 12
+2023-04-05 11:17:06,277 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: defer
+2023-04-05 11:17:06,277 INFO    HandlerThread:28169 [handler.py:handle_request_defer():170] handle defer: 12
+2023-04-05 11:17:06,277 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: defer
+2023-04-05 11:17:06,277 INFO    SenderThread:28169 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-04-05 11:17:07,141 INFO    SenderThread:28169 [sender.py:transition_state():587] send defer: 13
+2023-04-05 11:17:07,141 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: defer
+2023-04-05 11:17:07,141 INFO    HandlerThread:28169 [handler.py:handle_request_defer():170] handle defer: 13
+2023-04-05 11:17:07,141 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: defer
+2023-04-05 11:17:07,142 INFO    SenderThread:28169 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-04-05 11:17:07,142 INFO    SenderThread:28169 [sender.py:transition_state():587] send defer: 14
+2023-04-05 11:17:07,142 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: defer
+2023-04-05 11:17:07,142 INFO    HandlerThread:28169 [handler.py:handle_request_defer():170] handle defer: 14
+2023-04-05 11:17:07,142 DEBUG   SenderThread:28169 [sender.py:send():336] send: final
+2023-04-05 11:17:07,142 DEBUG   SenderThread:28169 [sender.py:send():336] send: footer
+2023-04-05 11:17:07,142 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: defer
+2023-04-05 11:17:07,143 INFO    SenderThread:28169 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-04-05 11:17:07,143 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-05 11:17:07,144 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: poll_exit
+2023-04-05 11:17:07,144 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: server_info
+2023-04-05 11:17:07,144 DEBUG   SenderThread:28169 [sender.py:send_request():363] send_request: server_info
+2023-04-05 11:17:07,147 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: get_summary
+2023-04-05 11:17:07,147 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: sampled_history
+2023-04-05 11:17:07,358 INFO    MainThread:28169 [wandb_run.py:_footer_history_summary_info():3429] rendering history
+2023-04-05 11:17:07,359 INFO    MainThread:28169 [wandb_run.py:_footer_history_summary_info():3461] rendering summary
+2023-04-05 11:17:07,359 INFO    MainThread:28169 [wandb_run.py:_footer_sync_info():3387] logging synced files
+2023-04-05 11:17:07,359 DEBUG   HandlerThread:28169 [handler.py:handle_request():144] handle_request: shutdown
+2023-04-05 11:17:07,359 INFO    HandlerThread:28169 [handler.py:finish():842] shutting down handler
+2023-04-05 11:17:07,942 WARNING StreamThr :28169 [internal.py:is_dead():415] Internal process exiting, parent pid 28091 disappeared
+2023-04-05 11:17:07,942 ERROR   StreamThr :28169 [internal.py:wandb_internal():153] Internal process shutdown.
+2023-04-05 11:17:08,144 INFO    WriterThread:28169 [datastore.py:close():298] close: /home/yerinyoon/code/anonymousNet/starGAN/wandb/run-20230405_111418-pghnnazi/run-pghnnazi.wandb
+2023-04-05 11:17:08,358 INFO    SenderThread:28169 [sender.py:finish():1504] shutting down sender
+2023-04-05 11:17:08,358 INFO    SenderThread:28169 [file_pusher.py:finish():164] shutting down file pusher
+2023-04-05 11:17:08,358 INFO    SenderThread:28169 [file_pusher.py:join():169] waiting for file pusher

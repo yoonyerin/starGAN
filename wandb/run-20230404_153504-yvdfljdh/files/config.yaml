@@ -1,0 +1,401 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.11
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: true
+    python_version: 3.10.9
+    start_time: 1680590104.483135
+    t:
+      1:
+      - 1
+      - 41
+      - 55
+      2:
+      - 1
+      - 41
+      - 55
+      3:
+      - 23
+      4: 3.10.9
+      5: 0.13.11
+      8:
+      - 2
+      - 5
+all_attrs:
+  desc: null
+  value:
+  - 5_o_Clock_Shadow
+  - Arched_Eyebrows
+  - Attractive
+  - Bags_Under_Eyes
+  - Bald
+  - Bangs
+  - Big_Lips
+  - Big_Nose
+  - Black_Hair
+  - Blond_Hair
+  - Blurry
+  - Brown_Hair
+  - Bushy_Eyebrows
+  - Chubby
+  - Double_Chin
+  - Eyeglasses
+  - Goatee
+  - Gray_Hair
+  - Heavy_Makeup
+  - High_Cheekbones
+  - Male
+  - Mouth_Slightly_Open
+  - Mustache
+  - Narrow_Eyes
+  - No_Beard
+  - Oval_Face
+  - Pale_Skin
+  - Pointy_Nose
+  - Receding_Hairline
+  - Rosy_Cheeks
+  - Sideburns
+  - Smiling
+  - Straight_Hair
+  - Wavy_Hair
+  - Wearing_Earrings
+  - Wearing_Hat
+  - Wearing_Lipstick
+  - Wearing_Necklace
+  - Wearing_Necktie
+  - Young
+attr_path:
+  desc: null
+  value: /data/datasets/CelebA/list_attr_celeba.txt
+batch_size:
+  desc: null
+  value: 16
+beta1:
+  desc: null
+  value: 0.5
+beta2:
+  desc: null
+  value: 0.999
+c2_dim:
+  desc: null
+  value: 6
+c_dim:
+  desc: null
+  value: 13
+celeba_crop_size:
+  desc: null
+  value: 178
+celeba_image_dir:
+  desc: null
+  value: /data/datasets/CelebA/img_align_celeba
+d_conv_dim:
+  desc: null
+  value: 64
+d_lr:
+  desc: null
+  value: 0.0001
+d_repeat_num:
+  desc: null
+  value: 6
+dataset:
+  desc: null
+  value: CelebA
+fake_img_dir:
+  desc: null
+  value: /home/yerinyoon/code/anonymousNet/fake_dir/fake_img_dir
+fake_label_file:
+  desc: null
+  value: /home/yerinyoon/code/anonymousNet/fake_dir/fake_label_file.csv
+fixed_attrs:
+  desc: null
+  value:
+  - - 5_o_Clock_Shadow
+    - Wavy_Hair
+    - Wearing_Earrings
+    - No_Beard
+    - Arched_Eyebrows
+    - Attractive
+    - Male
+    - Heavy_Makeup
+  - - Double_Chin
+    - Wavy_Hair
+    - Pointy_Nose
+    - Chubby
+    - Arched_Eyebrows
+    - Big_Nose
+    - Young
+    - Male
+    - Heavy_Makeup
+    - Wearing_Lipstick
+  - - 5_o_Clock_Shadow
+    - No_Beard
+    - Oval_Face
+    - Rosy_Cheeks
+    - Male
+    - Heavy_Makeup
+    - Wearing_Lipstick
+    - Mouth_Slightly_Open
+  - - Goatee
+    - Big_Nose
+    - Attractive
+    - Arched_Eyebrows
+    - 5_o_Clock_Shadow
+    - No_Beard
+    - Heavy_Makeup
+    - Wearing_Lipstick
+  - - Oval_Face
+    - Male
+    - Narrow_Eyes
+    - Rosy_Cheeks
+    - High_Cheekbones
+  - - Bags_Under_Eyes
+    - No_Beard
+    - Male
+    - Attractive
+    - Oval_Face
+    - Rosy_Cheeks
+    - Mouth_Slightly_Open
+    - High_Cheekbones
+g_conv_dim:
+  desc: null
+  value: 64
+g_lr:
+  desc: null
+  value: 0.0001
+g_repeat_num:
+  desc: null
+  value: 6
+gpu_id:
+  desc: null
+  value: 2
+group_folder:
+  desc: null
+  value: /home/yerinyoon/code/anonymousNet/mobile_select_attribute/group_data/
+group_index:
+  desc: null
+  value: 0
+image_size:
+  desc: null
+  value: 128
+input_dim:
+  desc: null
+  value: null
+lambda_cls:
+  desc: null
+  value: 1
+lambda_gp:
+  desc: null
+  value: 10
+lambda_rec:
+  desc: null
+  value: 10
+log_dir:
+  desc: null
+  value: ../
+log_step:
+  desc: null
+  value: 10
+lr_update_step:
+  desc: null
+  value: 1000
+mode:
+  desc: null
+  value: service
+model_save_dir:
+  desc: null
+  value: /data/checkpoints/yerin/starGAN/1/celeba128/experiment/onlyReversed6_stargan_lr0.0001_bs16_recon10_lambda1.0/
+model_save_step:
+  desc: null
+  value: 10000
+n_critic:
+  desc: null
+  value: 5
+num_iters:
+  desc: null
+  value: 200000
+num_iters_decay:
+  desc: null
+  value: 50000
+num_workers:
+  desc: null
+  value: 1
+output_prefix:
+  desc: null
+  value: model
+rafd_crop_size:
+  desc: null
+  value: 256
+real_img_dir:
+  desc: null
+  value: /home/yerinyoon/code/anonymousNet/real_dir/real_img_dir
+real_label_file:
+  desc: null
+  value: /home/yerinyoon/code/anonymousNet/real_dir/real_label_file.csv
+result_dir:
+  desc: null
+  value: /data/checkpoints/yerin/starGAN/1/celeba128/experiment/onlyReversed6_stargan_lr0.0001_bs16_recon10_lambda1.0/iter230000
+resume_from:
+  desc: null
+  value: /Users/yerinyoon/Documents/cubig/anonymousNet/service_model_save_point
+resume_iters:
+  desc: null
+  value: 200000
+reversed_attrs:
+  desc: null
+  value:
+  - - Narrow_Eyes
+    - Straight_Hair
+    - Pale_Skin
+    - Receding_Hairline
+    - Bald
+    - Oval_Face
+    - Double_Chin
+    - Bushy_Eyebrows
+  - - Mouth_Slightly_Open
+    - Straight_Hair
+    - Bushy_Eyebrows
+    - Bangs
+    - 5_o_Clock_Shadow
+    - Big_Lips
+    - Narrow_Eyes
+  - - Young
+    - Straight_Hair
+    - Receding_Hairline
+    - Chubby
+    - Big_Lips
+  - - Narrow_Eyes
+    - Straight_Hair
+    - Pale_Skin
+    - Mouth_Slightly_Open
+    - Receding_Hairline
+    - Oval_Face
+  - - Bald
+    - Pointy_Nose
+    - hair_color
+    - Young
+    - Straight_Hair
+    - Attractive
+    - Chubby
+  - - Straight_Hair
+    - Big_Lips
+    - Young
+sample_dir:
+  desc: null
+  value: /data/checkpoints/yerin/starGAN/1/celeba128/experiment/onlyReversed6_stargan_lr0.0001_bs16_recon10_lambda1.0/iter230000
+sample_step:
+  desc: null
+  value: 1000
+selected:
+  desc: null
+  value:
+  - - Narrow_Eyes
+    - Straight_Hair
+    - Pale_Skin
+    - Receding_Hairline
+    - Bald
+    - Oval_Face
+    - Double_Chin
+    - Bushy_Eyebrows
+    - 5_o_Clock_Shadow
+    - Wavy_Hair
+    - Wearing_Earrings
+    - No_Beard
+    - Arched_Eyebrows
+    - Attractive
+    - Male
+    - Heavy_Makeup
+  - - Mouth_Slightly_Open
+    - Straight_Hair
+    - Bushy_Eyebrows
+    - Bangs
+    - 5_o_Clock_Shadow
+    - Big_Lips
+    - Narrow_Eyes
+    - Double_Chin
+    - Wavy_Hair
+    - Pointy_Nose
+    - Chubby
+    - Arched_Eyebrows
+    - Big_Nose
+    - Young
+    - Male
+    - Heavy_Makeup
+    - Wearing_Lipstick
+  - - Young
+    - Straight_Hair
+    - Receding_Hairline
+    - Chubby
+    - Big_Lips
+    - 5_o_Clock_Shadow
+    - No_Beard
+    - Oval_Face
+    - Rosy_Cheeks
+    - Male
+    - Heavy_Makeup
+    - Wearing_Lipstick
+    - Mouth_Slightly_Open
+  - - Narrow_Eyes
+    - Straight_Hair
+    - Pale_Skin
+    - Mouth_Slightly_Open
+    - Receding_Hairline
+    - Oval_Face
+    - Goatee
+    - Big_Nose
+    - Attractive
+    - Arched_Eyebrows
+    - 5_o_Clock_Shadow
+    - No_Beard
+    - Heavy_Makeup
+    - Wearing_Lipstick
+  - - Bald
+    - Pointy_Nose
+    - hair_color
+    - Young
+    - Straight_Hair
+    - Attractive
+    - Chubby
+    - Oval_Face
+    - Male
+    - Narrow_Eyes
+    - Rosy_Cheeks
+    - High_Cheekbones
+  - - Straight_Hair
+    - Big_Lips
+    - Young
+    - Bags_Under_Eyes
+    - No_Beard
+    - Male
+    - Attractive
+    - Oval_Face
+    - Rosy_Cheeks
+    - Mouth_Slightly_Open
+    - High_Cheekbones
+service_attrs:
+  desc: null
+  value:
+  - Narrow_Eyes
+  - Pointy_Nose
+  - Gray_Hair
+  - Straight_Hair
+  - Bushy_Eyebrows
+  - PaleSkin
+service_model_save_dir:
+  desc: null
+  value: /home/yerinyoon/code/anonymousNet/service_model_save_point
+target_attr:
+  desc: null
+  value:
+  - Wearing_Lipstick
+  - Attractive
+  - High_Cheekbones
+  - High_Cheekbones
+  - Mouth_Slightly_Open
+  - Smiling
+test_iters:
+  desc: null
+  value: 200000

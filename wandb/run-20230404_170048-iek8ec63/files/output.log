@@ -1,0 +1,21 @@
+
+selected: ['Narrow_Eyes', 'Straight_Hair', 'Pale_Skin', 'Receding_Hairline', 'Bald', 'Oval_Face', 'Double_Chin', 'Bushy_Eyebrows', '5_o_Clock_Shadow', 'Wavy_Hair', 'Wearing_Earrings', 'No_Beard', 'Arched_Eyebrows', 'Attractive', 'Male', 'Heavy_Makeup']
+Finished preprocessing the CelebA dataset...
+0
+torch.cuda.is_available(): True
+gpu_id: 0
+torch.cuda.get_device_name(): NVIDIA RTX A6000
+selected: ['Narrow_Eyes', 'Straight_Hair', 'Pale_Skin', 'Receding_Hairline', 'Bald', 'Oval_Face', 'Double_Chin', 'Bushy_Eyebrows', '5_o_Clock_Shadow', 'Wavy_Hair', 'Wearing_Earrings', 'No_Beard', 'Arched_Eyebrows', 'Attractive', 'Male', 'Heavy_Makeup']
+Finished preprocessing the CelebA dataset...
+0
+dataset length: 0
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 278, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 97, in main
+    solver.train(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 416, in train
+    num = random.randrange(0,len(tmp_dataset))
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/random.py", line 353, in randrange
+    raise ValueError("empty range for randrange() (%d, %d, %d)" % (istart, istop, width))
+ValueError: empty range for randrange() (0, 0, 0)

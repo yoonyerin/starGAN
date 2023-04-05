@@ -1,0 +1,122 @@
+Finished preprocessing the CelebA dataset...
+torch.cuda.is_available(): True
+gpu_id: 0
+torch.cuda.get_device_name(): NVIDIA RTX A6000
+Finished preprocessing the CelebA dataset...
+Start training...
+  0%|                                                                                                                                                                                                                                                | 0/200000 [00:00<?, ?it/s]/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+  0%|                                                                                                                                                                                                                                    | 13/200000 [00:05<10:12:48,  5.44it/s]
+
+  0%|                                                                                                                                                                                                                                     | 31/200000 [00:07<7:00:38,  7.92it/s]
+Elapsed [0:00:06], Iteration [20/200000], D/loss_real: -35.0752, D/loss_fake: 5.1947, D/loss_cls: 8.9294, D/loss_gp: 0.9459, G/loss_fake: -3.1698, G/loss_rec: 0.4598, G/loss_cls: 8.3248
+
+  0%|                                                                                                                                                                                                                                     | 48/200000 [00:09<6:06:38,  9.09it/s]
+Elapsed [0:00:08], Iteration [40/200000], D/loss_real: 2.2529, D/loss_fake: -13.2474, D/loss_cls: 9.3286, D/loss_gp: 0.7270, G/loss_fake: -9.8269, G/loss_rec: 0.4093, G/loss_cls: 7.5165
+
+  0%|                                                                                                                                                                                                                                     | 58/200000 [00:10<8:06:14,  6.85it/s]
+
+
+  0%|                                                                                                                                                                                                                                    | 71/200000 [00:15<22:18:21,  2.49it/s]
+
+
+
+  0%|                                                                                                                                                                                                                                    | 82/200000 [00:21<31:49:30,  1.74it/s]
+
+
+
+  0%|                                                                                                                                                                                                                                    | 92/200000 [00:27<32:05:15,  1.73it/s]
+
+
+
+  0%|                                                                                                                                                                                                                                   | 102/200000 [00:33<32:26:35,  1.71it/s]
+
+
+  0%|                                                                                                                                                                                                                                   | 109/200000 [00:37<28:35:06,  1.94it/s]
+
+
+
+  0%|▏                                                                                                                                                                                                                                  | 119/200000 [00:43<27:59:46,  1.98it/s]
+
+
+
+  0%|▏                                                                                                                                                                                                                                  | 129/200000 [00:49<28:11:11,  1.97it/s]
+
+
+
+  0%|▏                                                                                                                                                                                                                                  | 139/200000 [00:55<28:25:21,  1.95it/s]
+
+
+
+
+  0%|▏                                                                                                                                                                                                                                  | 152/200000 [01:03<32:34:57,  1.70it/s]
+
+
+
+  0%|▏                                                                                                                                                                                                                                  | 162/200000 [01:09<32:35:01,  1.70it/s]
+
+
+
+  0%|▏                                                                                                                                                                                                                                  | 172/200000 [01:15<32:20:04,  1.72it/s]
+
+
+
+  0%|▏                                                                                                                                                                                                                                  | 182/200000 [01:21<32:47:48,  1.69it/s]
+
+
+
+  0%|▏                                                                                                                                                                                                                                  | 192/200000 [01:27<32:05:58,  1.73it/s]
+
+
+
+  0%|▏                                                                                                                                                                                                                                  | 202/200000 [01:33<32:31:09,  1.71it/s]
+
+
+
+  0%|▏                                                                                                                                                                                                                                  | 212/200000 [01:39<32:49:59,  1.69it/s]
+
+
+
+  0%|▎                                                                                                                                                                                                                                  | 222/200000 [01:45<32:13:04,  1.72it/s]
+
+
+
+  0%|▎                                                                                                                                                                                                                                  | 232/200000 [01:51<32:21:02,  1.72it/s]
+
+
+
+  0%|▎                                                                                                                                                                                                                                  | 242/200000 [01:57<32:46:08,  1.69it/s]
+
+
+
+  0%|▎                                                                                                                                                                                                                                  | 252/200000 [02:03<32:20:22,  1.72it/s]
+
+
+
+  0%|▎                                                                                                                                                                                                                                  | 262/200000 [02:10<32:31:59,  1.71it/s]
+
+
+
+  0%|▎                                                                                                                                                                                                                                  | 272/200000 [02:16<32:15:12,  1.72it/s]
+
+
+
+  0%|▎                                                                                                                                                                                                                                  | 282/200000 [02:22<32:31:46,  1.71it/s]
+
+
+
+  0%|▎                                                                                                                                                                                                                                  | 292/200000 [02:28<32:21:06,  1.71it/s]
+
+  0%|▎                                                                                                                                                                                                                                  | 298/200000 [02:32<28:19:04,  1.96it/s]
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 282, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 100, in main
+    solver.train(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 536, in train
+    d_loss.backward()
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

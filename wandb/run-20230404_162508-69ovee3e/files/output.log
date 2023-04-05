@@ -1,0 +1,26 @@
+
+selected: ['Narrow_Eyes', 'Straight_Hair', 'Pale_Skin', 'Receding_Hairline', 'Bald', 'Oval_Face', 'Double_Chin', 'Bushy_Eyebrows', '5_o_Clock_Shadow', 'Wavy_Hair', 'Wearing_Earrings', 'No_Beard', 'Arched_Eyebrows', 'Attractive', 'Male', 'Heavy_Makeup']
+Finished preprocessing the CelebA dataset...
+torch.cuda.is_available(): True
+gpu_id: 0
+torch.cuda.get_device_name(): NVIDIA RTX A6000
+torch.cuda.is_available(): True
+gpu_id: 0
+torch.cuda.get_device_name(): NVIDIA RTX A6000
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 278, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 107, in main
+    solver.create_img_data()
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 709, in create_img_data
+    self.restore_model(self.test_iters)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/model.py", line 229, in restore_model
+    self.G.load_state_dict(torch.load(G_path, map_location=lambda storage, loc: storage))
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/serialization.py", line 771, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/serialization.py", line 270, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/yerinyoon/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/serialization.py", line 251, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/data/checkpoints/yerin/starGAN/1/celeba128/experiment/onlyReversed6_stargan_lr0.0001_bs16_recon10_lambda1.0/200000-G.ckpt'
+Loading the trained models from step 200000...

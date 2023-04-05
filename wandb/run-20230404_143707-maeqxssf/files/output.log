@@ -1,0 +1,14 @@
+
+selected: ['Narrow_Eyes', 'Straight_Hair', 'Pale_Skin', 'hair_color', 'Receding_Hairline', 'Bald', 'Oval_Face', 'Double_Chin', 'Bushy_Eyebrows', '5_o_Clock_Shadow', 'Wavy_Hair', 'Wearing_Earrings', 'No_Beard', 'Arched_Eyebrows', 'Attractive', 'Male', 'Heavy_Makeup']
+Traceback (most recent call last):
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 278, in <module>
+    main(config)
+  File "/home/yerinyoon/code/anonymousNet/starGAN/stargan.py", line 72, in main
+    celeba_loader=get_loader(config, config.celeba_image_dir, config.attr_path,
+  File "/home/yerinyoon/code/anonymousNet/data/celeba/data_extract.py", line 157, in get_loader
+    dataset = CelebA(image_dir, attr_path, all_attrs, transform, config)
+  File "/home/yerinyoon/code/anonymousNet/data/celeba/data_extract.py", line 52, in __init__
+    self.preprocess()
+  File "/home/yerinyoon/code/anonymousNet/data/celeba/data_extract.py", line 93, in preprocess
+    idx = self.attr2idx[attr_name]
+KeyError: 'hair_color'
